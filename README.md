@@ -3,6 +3,33 @@ python3, personal practices record
 
 ## **Pass**
 ### **[ Easy Level ]**
+**[ Array and String ]**\
+---2022.09.06---\
+724. Find Pivot Index\
+---2022.09.07---\
+747. Largest Number At Least Twice of Others\
+66. Plus One(duplicate)\
+---2022.09.12---\
+118. Pascal's Triangle\
+---2022.09.13---\
+67. Add Binary\
+14. Longest Common Prefix(duplicate)\
+344. Reverse String\
+561. Array Partition
+
+**[ Linked List ]**\
+---2022.09.05---\
+141. Linked List Cycle\
+---2022.09.06---\
+160. Intersection of Two Linked Lists\
+206. Reverse Linked List\
+203. Remove Linked List Elements\
+234. Palindrome Linked List\
+21. Merge Two Sorted Lists(duplicate)
+
+---2022.09.06---\
+2011. Final Value of Variable After Performing Operations\
+2114. Maximum Number of Words Found in Sentences\
 ---2022.09.05---\
 1470. Shuffle the Array\
 ---2022.09.04---\
@@ -60,7 +87,26 @@ python3, personal practices record
 66. Plus One
 
 
+
 ### **[ Medium Level ]**
+**[ Array and String ]**\
+---2022.09.11---\
+498. Diagonal Traverse\
+---2022.09.12---\
+54. Spiral Matrix\
+---2022.09.13---\
+28. Find the Index of the First Occurrence in a String(duplicate)\
+167. Two Sum II - Input Array Is Sorted(Time Limit Exceeded)
+
+**[ Linked List ]**\
+---2022.09.05---\
+707. Design Linked List\
+---2022.09.06---\
+142. Linked List Cycle II\
+19. Remove Nth Node From End of List\
+328. Odd Even Linked List\
+2. Add Two Numbers
+
 **[ Tibame AI classmates 2022 ]**\
 1679. Max Number of K-Sum Pairs
 
