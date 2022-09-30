@@ -1,12 +1,11 @@
 '''
-Runtime: 439 ms, faster than 23.77% of Python3 online submissions 
-Memory Usage: 15.5 MB, less than 13.51% of Python3 online submissions
+Runtime: 448 ms, faster than 22.17% of Python3 online submissions 
+Memory Usage: 14.8 MB, less than 27.26% of Python3 online submissions
 '''
-class DoublyListNode:
-    def __init__(self, val: int, next=None, prev=None):
+class SiglyListNode:
+    def __init__(self, val: int, next=None):
         self.val = val
         self.next = next
-        self.prev = prev
     
 class MyLinkedList:
             
@@ -30,22 +29,17 @@ class MyLinkedList:
 
     def addAtIndex(self, index: int, val: int) -> None:
         curr = self.head
-        node = DoublyListNode(val)
+        node = SiglyListNode(val)
         
         if index > self.size:
             return
         elif index <= 0:
             node.next = curr
-            if curr:
-                curr.prev = node
             self.head = node
         else:
             for _ in range(index-1):
                 curr = curr.next
             node.next = curr.next
-            node.prev = curr
-            if curr.next:
-                curr.next.prev = node
             curr.next = node            
         self.size += 1            
 
@@ -55,14 +49,10 @@ class MyLinkedList:
             return
         elif index == 0:
             self.head = curr.next
-            if curr.next:
-                curr.next.prev = None
         else:
             for _ in range(index-1):
                 curr = curr.next
             curr.next = curr.next.next
-            if curr.next:
-                curr.next.prev = curr
         self.size -= 1
         
         
