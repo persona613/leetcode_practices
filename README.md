@@ -80,6 +80,14 @@ python3, personal practices record
 119. Pascal's Triangle II\
 557. Reverse Words in a String III
 
+**[ Hash Table ]**\
+---2022.09.30---\
+705. Design HashSet\
+705. Design HashSet(restudy)\
+706. Design HashMap\
+217. Contains Duplicate\
+136. Single Number
+
 **[ Others ]**\
 ---2022.09.04---\
 1929. Concatenation of Array\
