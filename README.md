@@ -1,5 +1,7 @@
 # LeetCode_practices
 python3, personal practices record
+2022.11.22
+Solved Problems : 84
 
 ## **Pass**
 ### **[ Easy Level ]**
@@ -86,7 +88,22 @@ python3, personal practices record
 705. Design HashSet(restudy)\
 706. Design HashMap\
 217. Contains Duplicate\
-136. Single Number
+136. Single Number\
+---2022.11.13---\
+349. Intersection of Two Arrays\
+202. Happy Number\
+1. Two Sum\
+---2022.11.14---\
+205. Isomorphic Strings\
+---2022.11.15---\
+599. Minimum Index Sum of Two Lists\
+---2022.11.16---\
+387. First Unique Character in a String\
+---2022.11.17---\
+350. Intersection of Two Arrays II\
+219. Contains Duplicate II\
+---2022.11.22---\
+771. Jewels and Stones
 
 **[ Others ]**\
 ---2022.09.04---\
@@ -141,3 +158,13 @@ python3, personal practices record
 189. Rotate Array\
 151. Reverse Words in a String
 
+**[ Hash Table ]**\
+---2022.11.18---\
+49. Group Anagrams\
+---2022.11.21---\
+36. Valid Sudoku\
+---2022.11.22---\
+3. Longest Substring Without Repeating Characters\
+454. 4Sum II\
+347. Top K Frequent Elements\
+380. Insert Delete GetRandom O(1)
