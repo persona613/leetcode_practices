@@ -1,3 +1,6 @@
+"""
+accepted
+"""
 class Solution:
     def isValid(self, s: str) -> bool:
         dic = {'(': 0, ')': 3, '[': 1, ']': 4, '{': 2, '}': 5}

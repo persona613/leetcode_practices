@@ -1,7 +1,7 @@
 # LeetCode_practices
 python3, personal practices record
-2022.11.22
-Solved Problems : 84
+2022.12.04
+Solved Problems : 100
 
 ## **Pass**
 ### **[ Easy Level ]**
@@ -103,7 +103,15 @@ Solved Problems : 84
 350. Intersection of Two Arrays II\
 219. Contains Duplicate II\
 ---2022.11.22---\
-771. Jewels and Stones
+771. Jewels and Stones\
+**[ Queue & Stack ]**\
+---2022.11.27---\
+20. Valid Parentheses(duplicate)\
+---2022.12.01---\
+232. Implement Queue using Stacks\
+225. Implement Stack using Queues\
+---2022.12.02---\
+733. Flood Fill
 
 **[ Others ]**\
 ---2022.09.04---\
@@ -167,4 +175,33 @@ Solved Problems : 84
 3. Longest Substring Without Repeating Characters\
 454. 4Sum II\
 347. Top K Frequent Elements\
-380. Insert Delete GetRandom O(1)
+380. Insert Delete GetRandom O(1)\
+---2022.11.29---\
+652. Find Duplicate Subtrees
+
+**[ Queue & Stack ]**\
+---2022.11.23---\
+622. Design Circular Queue\
+---2022.11.24---\
+200. Number of Islands\
+---2022.11.25---\
+752. Open the Lock\
+---2022.11.26---\
+279. Perfect Squares\
+155. Min Stack\
+---2022.11.27---\
+739. Daily Temperatures\
+---2022.11.28---\
+150. Evaluate Reverse Polish Notation\
+---2022.11.29---\
+200. Number of Islands(duplicate)\
+133. Clone Graph\
+---2022.11.30---\
+494. Target Sum\
+94. Binary Tree Inorder Traversal\
+---2022.12.01---\
+394. Decode String\
+---2022.12.04---\
+841. Keys and Rooms\
+---2022.12.06---\
+542. 01 Matrix
