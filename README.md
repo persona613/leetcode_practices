@@ -1,7 +1,7 @@
 # LeetCode_practices
 python3, personal practices record
-2022.12.04
-Solved Problems : 100
+2022.12.17
+Solved Problems : 116
 
 ## **Pass**
 ### **[ Easy Level ]**
@@ -111,7 +111,20 @@ Solved Problems : 100
 232. Implement Queue using Stacks\
 225. Implement Stack using Queues\
 ---2022.12.02---\
-733. Flood Fill
+733. Flood Fill\
+**[ Binary Search ]**\
+---2022.12.07---\
+704. Binary Search\
+69. Sqrt(x)\
+374. Guess Number Higher or Lower
+---2022.12.09---\
+278. First Bad Version
+---2022.12.14---\
+367. Valid Perfect Square\
+744. Find Smallest Letter Greater Than Target\
+---2022.12.15---\
+349. Intersection of Two Arrays(duplicate)\
+350. Intersection of Two Arrays II(duplicate)
 
 **[ Others ]**\
 ---2022.09.04---\
@@ -205,3 +218,31 @@ Solved Problems : 100
 841. Keys and Rooms\
 ---2022.12.06---\
 542. 01 Matrix
+
+**[ Binary Search ]**\
+---2022.12.09---\
+33. Search in Rotated Sorted Array\
+---2022.12.11---\
+162. Find Peak Element\
+153. Find Minimum in Rotated Sorted Array\
+34. Find First and Last Position of Element in Sorted Array\
+---2022.12.12---\
+658. Find K Closest Elements\
+162. Find Peak Element(duplicate)\
+---2022.12.13---\
+50. Pow(x, n)\
+---2022.12.14---\
+153. Find Minimum in Rotated Sorted Array(duplicate)\
+---2022.12.16---\
+287. Find the Duplicate Number\
+167. Two Sum II - Input Array Is Sorted(duplicate)
+
+
+
+
+### **[ Hard Level ]**
+**[ Binary Search ]**\
+---2022.12.14---\
+154. Find Minimum in Rotated Sorted Array II\
+---2022.12.17---\
+4. Median of Two Sorted Arrays
