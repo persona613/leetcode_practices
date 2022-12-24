@@ -1,10 +1,10 @@
 # LeetCode_practices
-python3, personal practices record
-2022.12.17
-Solved Problems : 116
+python3, personal practices record,
+2022.12.24
+Solved Problems : 123
 
 ## **Pass**
-### **[ Easy Level ]**
+## **[ Easy Level ]**
 **[ Python Basic Class by Lin ]**\
 ---2022.05.02---\
 1\. Two Sum\
@@ -40,7 +40,7 @@ Solved Problems : 116
 1089. Duplicate Zeros\
 88. Merge Sorted Array\
 ---2022.09.03---\
-27. Remove Element
+27. Remove Element\
 26. Remove Duplicates from Sorted Array(duplicate)\
 1346. Check If N and Its Double Exist\
 941. Valid Mountain Array\
@@ -92,7 +92,7 @@ Solved Problems : 116
 ---2022.11.13---\
 349. Intersection of Two Arrays\
 202. Happy Number\
-1. Two Sum\
+1\. Two Sum\
 ---2022.11.14---\
 205. Isomorphic Strings\
 ---2022.11.15---\
@@ -103,7 +103,8 @@ Solved Problems : 116
 350. Intersection of Two Arrays II\
 219. Contains Duplicate II\
 ---2022.11.22---\
-771. Jewels and Stones\
+771. Jewels and Stones
+
 **[ Queue & Stack ]**\
 ---2022.11.27---\
 20. Valid Parentheses(duplicate)\
@@ -111,20 +112,27 @@ Solved Problems : 116
 232. Implement Queue using Stacks\
 225. Implement Stack using Queues\
 ---2022.12.02---\
-733. Flood Fill\
+733. Flood Fill
+
 **[ Binary Search ]**\
 ---2022.12.07---\
 704. Binary Search\
 69. Sqrt(x)\
-374. Guess Number Higher or Lower
+374. Guess Number Higher or Lower\
 ---2022.12.09---\
-278. First Bad Version
+278. First Bad Version\
 ---2022.12.14---\
 367. Valid Perfect Square\
 744. Find Smallest Letter Greater Than Target\
 ---2022.12.15---\
 349. Intersection of Two Arrays(duplicate)\
-350. Intersection of Two Arrays II(duplicate)
+350. Intersection of Two Arrays II(duplicate)\
+**[ Sorting ]**\
+---2022.12.22---\
+1051. Height Checker\
+---2022.12.23---\
+75. Sort Colors(duplicate)\
+1200. Minimum Absolute Difference
 
 **[ Others ]**\
 ---2022.09.04---\
@@ -139,7 +147,7 @@ Solved Problems : 116
 
 
 
-### **[ Medium Level ]**
+## **[ Medium Level ]**
 **[ Python Basic Class by Lin ]**\
 ---2022.05.02---\
 28. Find the Index of the First Occurrence in a String
@@ -237,12 +245,24 @@ Solved Problems : 116
 287. Find the Duplicate Number\
 167. Two Sum II - Input Array Is Sorted(duplicate)
 
+**[ Sorting ]**\
+---2022.12.20---\
+75. Sort Colors\
+---2022.12.22---\
+147. Insertion Sort List\
+912. Sort an Array\
+215. Kth Largest Element in an Array\
+---2022.12.24---\
+2343. Query Kth Smallest Trimmed Number\
+347. Top K Frequent Elements(duplicate)
 
 
 
-### **[ Hard Level ]**
+## **[ Hard Level ]**
 **[ Binary Search ]**\
 ---2022.12.14---\
 154. Find Minimum in Rotated Sorted Array II\
 ---2022.12.17---\
-4. Median of Two Sorted Arrays
+4. Median of Two Sorted Arrays\
+---2022.12.24---\
+164. Maximum Gap

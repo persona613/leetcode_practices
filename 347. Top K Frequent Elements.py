@@ -1,15 +1,15 @@
 '''
-Runtime: 240 ms, faster than 45.37% of Python3 online submissions 
-Memory Usage: 18.7 MB, less than 71.50% of Python3 online submissions
+Runtime: 126 ms, faster than 75.89% of Python3 online submissions 
+Memory Usage: 19.7 MB, less than 14.32% of Python3 online submissions
 '''
+# bucket sort
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        hm = defaultdict(int)
-        for n in nums:
-            hm[n] += 1
-        l = sorted(hm.items(), key=lambda x : x[1], reverse=True)
+        count = Counter(nums)
+        bucket = [[] for _ in range(len(nums)+1)]
         
-        res = []
-        for i in range(k):
-            res.append(l[i][0])
-        return res
+        for n, freq in count.items():
+            bucket[freq].append(n) 
+        flat = [n for bk in bucket for n in bk]
+        
+        return flat[::-1][:k]
