@@ -1,6 +1,6 @@
 '''
-Runtime: 35 ms, faster than 87.09% of Python3 online submissions 
-Memory Usage: 14 MB, less than 0% of Python3 online submissions 
+Runtime: 37 ms, faster than 78.25% of Python3 online submissions 
+Memory Usage: 13.9 MB, less than 59.35% of Python3 online submissions 
 '''
 
 # Definition for a binary tree node.
@@ -11,23 +11,14 @@ Memory Usage: 14 MB, less than 0% of Python3 online submissions
 #         self.right = right
 class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-        if not root:
-            return []
-        leftseen = set()
-        stk = [root]
-        ans = []
-        
-        while stk:
-            curr = stk[-1]
-            leftseen.add(curr)
-            if curr.left and curr.left not in leftseen:
-                stk.append(curr.left)
-                continue
+        res = []
+
+        def dfs(node):
+            if not node:
+                return
+            dfs(node.left)
+            res.append(node.val)
+            dfs(node.right)
             
-            ans.append(curr.val)
-            stk.pop()
-            
-            if curr.right:
-                stk.append(curr.right)
-                continue
-        return ans
+        dfs(root)
+        return res

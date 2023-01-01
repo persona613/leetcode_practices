@@ -1,7 +1,7 @@
 # LeetCode_practices
 python3, personal practices record,
-2022.12.24
-Solved Problems : 123
+2023.01.01
+Solved Problems : 133
 
 ## **Pass**
 ## **[ Easy Level ]**
@@ -127,12 +127,25 @@ Solved Problems : 123
 ---2022.12.15---\
 349. Intersection of Two Arrays(duplicate)\
 350. Intersection of Two Arrays II(duplicate)\
+
 **[ Sorting ]**\
 ---2022.12.22---\
 1051. Height Checker\
 ---2022.12.23---\
 75. Sort Colors(duplicate)\
 1200. Minimum Absolute Difference
+
+**[ Binary Tree ]**\
+---2022.12.25---\
+144. Binary Tree Preorder Traversal\
+---2022.12.26---\
+94. Binary Tree Inorder Traversal(duplicate)\
+145. Binary Tree Postorder Traversal\
+---2022.12.28---\
+104. Maximum Depth of Binary Tree\
+---2022.12.29---\
+101. Symmetric Tree\
+112. Path Sum
 
 **[ Others ]**\
 ---2022.09.04---\
@@ -255,6 +268,18 @@ Solved Problems : 123
 ---2022.12.24---\
 2343. Query Kth Smallest Trimmed Number\
 347. Top K Frequent Elements(duplicate)
+
+**[ Binary Tree ]**\
+---2022.12.27---\
+102. Binary Tree Level Order Traversal\
+---2022.12.31---\
+106. Construct Binary Tree from Inorder and Postorder Traversal\
+105. Construct Binary Tree from Preorder and Inorder Traversal\
+116. Populating Next Right Pointers in Each Node\
+117. Populating Next Right Pointers in Each Node II\
+---2023.01.01---\
+236. Lowest Common Ancestor of a Binary Tree
+
 
 
 
