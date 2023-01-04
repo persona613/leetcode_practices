@@ -1,7 +1,7 @@
 # LeetCode_practices
 python3, personal practices record,
-2023.01.01
-Solved Problems : 133
+2023.01.04
+Solved Problems : 140
 
 ## **Pass**
 ## **[ Easy Level ]**
@@ -147,6 +147,18 @@ Solved Problems : 133
 101. Symmetric Tree\
 112. Path Sum
 
+**[ Recursion I ]**\
+---2023.01.01---\
+344. Reverse String(duplicate)\
+206. Reverse Linked List\
+700. Search in a Binary Search Tree\
+119. Pascal's Triangle II(duplicate)\
+---2023.01.03---\
+509. Fibonacci Number\
+70. Climbing Stairs\
+104. Maximum Depth of Binary Tree(duplicate)*2\
+21. Merge Two Sorted Lists(duplicate)
+
 **[ Others ]**\
 ---2022.09.04---\
 1929. Concatenation of Array\
@@ -156,6 +168,7 @@ Solved Problems : 133
 ---2022.09.06---\
 2011. Final Value of Variable After Performing Operations\
 2114. Maximum Number of Words Found in Sentences
+
 
 
 
@@ -278,7 +291,16 @@ Solved Problems : 133
 116. Populating Next Right Pointers in Each Node\
 117. Populating Next Right Pointers in Each Node II\
 ---2023.01.01---\
-236. Lowest Common Ancestor of a Binary Tree
+236. Lowest Common Ancestor of a Binary Tree\
+
+**[ Recursion I ]**\
+---2023.01.01---\
+24. Swap Nodes in Pairs\
+---2023.01.03---\
+779. K-th Symbol in Grammar
+---2023.01.04---\
+95. Unique Binary Search Trees II
+
 
 
 

@@ -1,6 +1,6 @@
 """
-49 ms runtime beats 70.28%
-16.3 MB memory beats 23.2%
+86 ms runtime beats 34.28%
+16.4 MB memory beats 23.2%
 """
 # Definition for a binary tree node.
 # class TreeNode:
@@ -11,15 +11,16 @@
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         res = 0
-        # d denote the depth-1
+        # d denote the depth
         def depth(node, d):
             nonlocal res
             if not node:
-                res = max(res,d)
                 return
+            if d > res:
+                res = d
             
             depth(node.left, d+1)
             depth(node.right, d+1)
             
-        depth(root, 0)
+        depth(root, 1)
         return res

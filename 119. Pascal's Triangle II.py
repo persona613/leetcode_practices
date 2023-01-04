@@ -1,25 +1,33 @@
 '''
-Runtime: 67 ms, faster than 9.3% of Python3 online submissions 
-Memory Usage: 13.8 MB, less than 63.41% of Python3 online submissions 
+Runtime: 39 ms, faster than 67.86% of Python3 online submissions 
+Memory Usage: 13.9 MB, less than 16.29% of Python3 online submissions 
 '''
 class Solution:
+    def __init__(self):
+        # {i:[j0,j1,j2...]} => record pascal(i,j)
+        self.dict = {i:[0]*(i+1) for i in range(34)}
+        
+    def pascal(self, i, j):
+        if j==0 or j==i:
+            return 1
+        
+        # if dict[i][j] = 0
+        if not self.dict[i-1][j-1]:
+            self.dict[i-1][j-1] = self.pascal(i-1, j-1)
+        if not self.dict[i-1][j]:
+            self.dict[i-1][j] = self.pascal(i-1, j)
+            
+        return self.dict[i-1][j-1] + self.dict[i-1][j]
+    
     def getRow(self, rowIndex: int) -> List[int]:
-        if rowIndex == 0:
-            return [1]
-        if rowIndex == 1:
-            return [1,1]
-        uprow = [1,1]
-        ans = []
-        i = 2
-        while i < rowIndex+1:
-            ans.clear()
-            ans.append(1)
-            for j in range(i+1-2):
-                # print(uprow)
-                elem = uprow[j]+uprow[j+1]
-                ans.append(elem)
-            ans.append(1)
-            uprow[:] = ans[:]
-            # print(uprow)
-            i += 1
+        ans = [0]*(rowIndex+1)
+        
+        # elements' number = rowIndex
+        # mid = rowIndex//2 + 1 -> mirror half list
+        k = rowIndex
+        for j in range(rowIndex//2 + 1):
+            ans[j] = self.pascal(rowIndex, j)
+            ans[k] = ans[j]
+            k -= 1
         return ans
+        

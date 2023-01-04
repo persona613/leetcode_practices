@@ -1,6 +1,6 @@
 '''
-Runtime: 98 ms, faster than 0% of Python3 online submissions 
-Memory Usage: 15.6 MB, less than 28.36% of Python3 online submissions
+Runtime: 41 ms, faster than 77.21% of Python3 online submissions 
+Memory Usage: 20.5 MB, less than 8.32% of Python3 online submissions
 '''
 # Definition for singly-linked list.
 # class ListNode:
@@ -9,14 +9,13 @@ Memory Usage: 15.6 MB, less than 28.36% of Python3 online submissions
 #         self.next = next
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        start = head
-        target = None
-        if not head:
-            return head
-        while head.next:
-            target = head.next
-            head.next = head.next.next
-            target.next = start
-            start = target
-        # head = start
-        return start
+        pivot = None
+        def reverse(pivot, head):
+            if not head:
+                return pivot
+            curr = head
+            head, curr.next, pivot = head.next, pivot, curr
+            return reverse(pivot, head)
+        
+        return reverse(pivot, head)
+            
