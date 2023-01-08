@@ -1,7 +1,7 @@
 # LeetCode_practices
 python3, personal practices record,
-2023.01.04
-Solved Problems : 140
+2023.01.08
+Solved Problems : 146
 
 ## **Pass**
 ## **[ Easy Level ]**
@@ -126,7 +126,7 @@ Solved Problems : 140
 744. Find Smallest Letter Greater Than Target\
 ---2022.12.15---\
 349. Intersection of Two Arrays(duplicate)\
-350. Intersection of Two Arrays II(duplicate)\
+350. Intersection of Two Arrays II(duplicate)
 
 **[ Sorting ]**\
 ---2022.12.22---\
@@ -291,15 +291,23 @@ Solved Problems : 140
 116. Populating Next Right Pointers in Each Node\
 117. Populating Next Right Pointers in Each Node II\
 ---2023.01.01---\
-236. Lowest Common Ancestor of a Binary Tree\
+236. Lowest Common Ancestor of a Binary Tree
 
 **[ Recursion I ]**\
 ---2023.01.01---\
 24. Swap Nodes in Pairs\
 ---2023.01.03---\
-779. K-th Symbol in Grammar
+779. K-th Symbol in Grammar\
 ---2023.01.04---\
 95. Unique Binary Search Trees II
+
+**[ Trie ]**\
+---2023.01.05---\
+677. Map Sum Pairs\
+648. Replace Words\
+211. Design Add and Search Words Data Structure\
+---2023.01.06---\
+421. Maximum XOR of Two Numbers in an Array
 
 
 
@@ -313,3 +321,7 @@ Solved Problems : 140
 4. Median of Two Sorted Arrays\
 ---2022.12.24---\
 164. Maximum Gap
+
+**[ Trie ]**\
+---2023.01.08---\
+336. Palindrome Pairs
