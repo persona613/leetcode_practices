@@ -1,7 +1,7 @@
 # LeetCode_practices
 python3, personal practices record,
-2023.01.08
-Solved Problems : 146
+2023.01.16
+Solved Problems : 155
 
 ## **Pass**
 ## **[ Easy Level ]**
@@ -159,6 +159,10 @@ Solved Problems : 146
 104. Maximum Depth of Binary Tree(duplicate)*2\
 21. Merge Two Sorted Lists(duplicate)
 
+**[ Recursion II ]**\
+---2023.01.14---\
+100. Same Tree
+
 **[ Others ]**\
 ---2022.09.04---\
 1929. Concatenation of Array\
@@ -309,6 +313,19 @@ Solved Problems : 146
 ---2023.01.06---\
 421. Maximum XOR of Two Numbers in an Array
 
+**[ Recursion II ]**\
+---2023.01.08---\
+912. Sort an Array\
+---2023.01.10---\
+98. Validate Binary Search Tree\
+240. Search a 2D Matrix II\
+---2023.01.13---\
+77. Combinations\
+---2023.01.15---\
+22. Generate Parentheses\
+46. Permutations\
+17. Letter Combinations of a Phone Number
+
 
 
 
@@ -325,3 +342,8 @@ Solved Problems : 146
 **[ Trie ]**\
 ---2023.01.08---\
 336. Palindrome Pairs
+
+**[ Recursion II ]**\
+---2023.01.12---\
+52. N-Queens II\
+37. Sudoku Solver
