@@ -1,6 +1,6 @@
 """ 
-50 ms runtime beats 74.36%
-16.5 MB memory beats 43.74%
+51 ms runtime beats 64.47%
+17 MB memory beats 13.64%
 """
 # Definition for a binary tree node.
 # class TreeNode:
@@ -11,59 +11,29 @@
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
         
-        def bst(node):
+        def bst(node):            
+            if not node:
+                return
             
-            if not node.left and not node.right:
+            left = bst(node.left)
+            right = bst(node.right)
+            
+            if left == False or right == False:
+                return False
+            elif left == None and right == None:
                 return [node.val, node.val]
+            elif left == None:
+                if not node.val < right[0]:
+                    return False
+                return [node.val, right[1]]
+            elif right == None:
+                if not node.val > left[1]:
+                    return False
+                return [left[0], node.val]
+            else:
+                if not node.val < right[0] or \
+                   not node.val > left[1]:
+                    return False
+                return [left[0], right[1]]
             
-            lside = rside = None # [min_val, max_val]
-            if node.left:
-                if not node.val > node.left.val:
-                    return False
-                lside = bst(node.left)
-                if lside == False:
-                    return False
-            if node.right:
-                if not node.val < node.right.val:
-                    return False
-                rside = bst(node.right)
-                if rside == False:
-                    return False
-                
-            ret = [node.val]    
-            if lside == None:
-                if not node.val < rside[0]:
-                    return False
-                else:
-                    ret.extend(rside)
-                    return [min(ret), max(ret)]
-            elif rside == None:
-                if not node.val > lside[1]:
-                    return False
-                else:
-                    ret.extend(lside)
-                    return [min(ret), max(ret)]
-            elif lside and rside:
-                if not node.val < rside[0] or \
-                   not node.val > lside[1]:
-                    return False
-                else:
-                    ret.extend(lside)
-                    ret.extend(rside)
-                    return [min(ret), max(ret)]
-                
         return bst(root) != False
-                    
-                
-            
-
-        
-
-            
-        
-            
-            
- 
-        
-        
-

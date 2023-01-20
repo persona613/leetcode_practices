@@ -1,7 +1,7 @@
 # LeetCode_practices
 python3, personal practices record,
-2023.01.16
-Solved Problems : 155
+2023.01.20
+Solved Problems : 164
 
 ## **Pass**
 ## **[ Easy Level ]**
@@ -162,6 +162,16 @@ Solved Problems : 155
 **[ Recursion II ]**\
 ---2023.01.14---\
 100. Same Tree
+
+**[ N-ary Tree ]**\
+---2023.01.16---\
+589. N-ary Tree Preorder Traversal\
+590. N-ary Tree Postorder Traversal\
+559. Maximum Depth of N-ary Tree
+
+**[ Binary Search Tree ]**\
+---2023.01.20---\
+110. Balanced Binary Tree
 
 **[ Others ]**\
 ---2022.09.04---\
@@ -325,6 +335,21 @@ Solved Problems : 155
 22. Generate Parentheses\
 46. Permutations\
 17. Letter Combinations of a Phone Number
+
+**[ N-ary Tree ]**\
+---2023.01.16---\
+429. N-ary Tree Level Order Traversal
+
+**[ Binary Search Tree ]**\
+---2023.01.16---\
+98. Validate Binary Search Tree(duplicate)\
+173. Binary Search Tree Iterator\
+---2023.01.17---\
+701. Insert into a Binary Search Tree\
+---2023.01.18---\
+450. Delete Node in a BST\
+---2023.01.19---\
+235. Lowest Common Ancestor of a Binary Search Tree
 
 
 
