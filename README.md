@@ -1,7 +1,7 @@
 # LeetCode_practices
 python3, personal practices record,
-2023.01.20
-Solved Problems : 164
+2023.03.06
+Solved Problems : 188
 
 ## **Pass**
 ## **[ Easy Level ]**
@@ -173,6 +173,14 @@ Solved Problems : 164
 ---2023.01.20---\
 110. Balanced Binary Tree
 
+**[ Top 100 Liked Questions ]**\
+---2023.01.21---\
+169. Majority Element\
+---2023.01.22---\
+543. Diameter of Binary Tree\
+---2023.01.25---\
+121. Best Time to Buy and Sell Stock
+
 **[ Others ]**\
 ---2022.09.04---\
 1929. Concatenation of Array\
@@ -181,7 +189,16 @@ Solved Problems : 164
 1470. Shuffle the Array\
 ---2022.09.06---\
 2011. Final Value of Variable After Performing Operations\
-2114. Maximum Number of Words Found in Sentences
+2114. Maximum Number of Words Found in Sentences\
+---2023.01.27---\
+1108. Defanging an IP Address\
+---2023.01.28---\
+1816. Truncate Sentence\
+---2023.01.29---\
+58. Length of Last Word\
+---2023.03.01---\
+83. Remove Duplicates from Sorted List
+
 
 
 
@@ -350,6 +367,43 @@ Solved Problems : 164
 450. Delete Node in a BST\
 ---2023.01.19---\
 235. Lowest Common Ancestor of a Binary Search Tree
+
+**[ Top 100 Liked Questions ]**\
+---2023.01.23---\
+78. Subsets\
+---2023.01.30---\
+763. Partition Labels\
+---2023.02.01---\
+39. Combination Sum\
+---2023.02.03---\
+48. Rotate Image\
+---2023.02.07---\
+230. Kth Smallest Element in a BST\
+238. Product of Array Except Self\
+---2023.02.08---\
+114. Flatten Binary Tree to Linked List\
+---2023.02.10---\
+199. Binary Tree Right Side View\
+73. Set Matrix Zeroes\
+---2023.02.11---\
+11. Container With Most Water\
+---2023.02.13---\
+74. Search a 2D Matrix\
+---2023.02.16---\
+198. House Robber\
+---2023.02.20---\
+62. Unique Paths\
+---2023.02.21---\
+64. Minimum Path Sum\
+---2023.03.03---\
+322. Coin Change\
+---2023.03.06---\
+79. Word Search
+
+**[ Others ]**\
+---2023.02.15---\
+38. Count and Say
+
 
 
 
