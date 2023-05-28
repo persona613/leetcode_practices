@@ -1,7 +1,7 @@
 # LeetCode_practices
 python3, personal practices record,
-2023.03.06
-Solved Problems : 188
+2023.05.28
+Solved Problems : 221
 
 ## **Pass**
 ## **[ Easy Level ]**
@@ -197,7 +197,73 @@ Solved Problems : 188
 ---2023.01.29---\
 58. Length of Last Word\
 ---2023.03.01---\
-83. Remove Duplicates from Sorted List
+83. Remove Duplicates from Sorted List\
+---2023.04.02---\
+168. Excel Sheet Column Title\
+---2023.04.16---\
+111. Minimum Depth of Binary Tree\
+---2023.04.18---\
+125. Valid Palindrome\
+---2023.04.19---\
+171. Excel Sheet Column Number\
+---2023.04.21---\
+228. Summary Ranges\
+---2023.04.22---\
+231. Power of Two\
+---2023.04.23---\
+242. Valid Anagram\
+---2023.04.24---\
+257. Binary Tree Paths\
+---2023.04.25---\
+258. Add Digits\
+---2023.04.26---\
+263. Ugly Number\
+---2023.04.27---\
+268. Missing Number\
+---2023.04.28---\
+290. Word Pattern\
+---2023.04.29---\
+292. Nim Game\
+---2023.04.30---\
+303. Range Sum Query - Immutable\
+---2023.05.01---\
+326. Power of Three\
+---2023.05.02---\
+345. Reverse Vowels of a String\
+---2023.05.03---\
+404. Sum of Left Leaves\
+---2023.05.04---\
+409. Longest Palindrome\
+---2023.05.05---\
+415. Add Strings\
+---2023.05.06---\
+434. Number of Segments in a String\
+---2023.05.08---\
+441. Arranging Coins\
+---2023.05.09---\
+463. Island Perimeter\
+---2023.05.12---\
+492. Construct the Rectangle\
+---2023.05.17---\
+495. Teemo Attacking\
+---2023.05.18---\
+520. Detect Capital\
+---2023.05.19---\
+500. Keyboard Row\
+---2023.05.21---\
+482. License Key Formatting\
+---2023.05.22---\
+504. Base 7\
+---2023.05.23---\
+507. Perfect Number\
+---2023.05.26---\
+551. Student Attendance Record I\
+---2023.05.28---\
+541. Reverse String II
+
+
+
+
 
 
 
@@ -398,11 +464,19 @@ Solved Problems : 188
 ---2023.03.03---\
 322. Coin Change\
 ---2023.03.06---\
-79. Word Search
+79. Word Search\
+---2023.04.17---\
+45. Jump Game II
 
 **[ Others ]**\
 ---2023.02.15---\
-38. Count and Say
+38. Count and Say\
+---2023.04.16---\
+12. Integer to Roman
+
+
+
+
 
 
 
