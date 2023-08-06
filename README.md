@@ -1,7 +1,7 @@
 # LeetCode_practices
 python3, personal practices record,
-2023.05.28
-Solved Problems : 221
+2023.08.06
+Solved Problems : 282
 
 ## **Pass**
 ## **[ Easy Level ]**
@@ -179,7 +179,8 @@ Solved Problems : 221
 ---2023.01.22---\
 543. Diameter of Binary Tree\
 ---2023.01.25---\
-121. Best Time to Buy and Sell Stock
+[Daily LeetCoding Challenge 2023.02.26]\
+121. Best Time to Buy and Sell Stock 
 
 **[ Others ]**\
 ---2022.09.04---\
@@ -259,7 +260,119 @@ Solved Problems : 221
 ---2023.05.26---\
 551. Student Attendance Record I\
 ---2023.05.28---\
-541. Reverse String II
+541. Reverse String II\
+---2023.05.29---\
+563. Binary Tree Tilt\
+---2023.05.30---\
+566. Reshape the Matrix\
+---2023.05.31---\
+575. Distribute Candies\
+---2023.06.01---\
+598. Range Addition II\
+---2023.06.02---\
+605. Can Place Flowers\
+---2023.06.04---\
+606. Construct String from Binary Tree\
+---2023.06.05---\
+628. Maximum Product of Three Numbers\
+---2023.06.06---\
+637. Average of Levels in Binary Tree\
+---2023.06.07---\
+643. Maximum Average Subarray I\
+---2023.06.10---\
+653. Two Sum IV - Input is a BST\
+---2023.06.11---\
+657. Robot Return to Origin\
+---2023.06.12---\
+671. Second Minimum Node In a Binary Tree\
+---2023.06.13---\
+674. Longest Continuous Increasing Subsequence\
+---2023.06.16---\
+682. Baseball Game\
+---2023.06.17---\
+696. Count Binary Substrings\
+---2023.06.19---\
+709. To Lower Case\
+---2023.06.20---\
+717. 1-bit and 2-bit Characters\
+---2023.06.21---\
+728. Self Dividing Numbers\
+---2023.06.22---\
+748. Shortest Completing Word\
+---2023.06.23---\
+766. Toeplitz Matrix\
+---2023.06.24---\
+783. Minimum Distance Between BST Nodes\
+---2023.06.25---\
+762. Prime Number of Set Bits in Binary Representation\
+---2023.06.26---\
+796. Rotate String\
+---2023.06.27---\
+804. Unique Morse Code Words\
+---2023.06.29---\
+806. Number of Lines To Write String\
+---2023.06.30---\
+821. Shortest Distance to a Character\
+---2023.07.01---\
+824. Goat Latin\
+---2023.07.02---\
+819. Most Common Word\
+---2023.07.03---\
+830. Positions of Large Groups\
+---2023.07.04---\
+832. Flipping an Image\
+---2023.07.06---\
+836. Rectangle Overlap\
+---2023.07.07---\
+191. Number of 1 Bits\
+---2023.07.08---\
+844. Backspace String Compare\
+---2023.07.11---\
+859. Buddy Strings\
+---2023.07.12---\
+860. Lemonade Change\
+---2023.07.14---\
+867. Transpose Matrix\
+---2023.07.16---\
+872. Leaf-Similar Trees\
+---2023.07.17---\
+868. Binary Gap\
+---2023.07.18---\
+883. Projection Area of 3D Shapes\
+---2023.07.19---\
+884. Uncommon Words from Two Sentences\
+---2023.07.21---\
+888. Fair Candy Swap\
+---2023.07.22---\
+892. Surface Area of 3D Shapes\
+---2023.07.23---\
+896. Monotonic Array\
+---2023.07.24---\
+908. Smallest Range I\
+---2023.07.26---\
+914. X of a Kind in a Deck of Cards\
+---2023.07.27---\
+917. Reverse Only Letters\
+---2023.07.28---\
+922. Sort Array By Parity II\
+---2023.07.29---\
+925. Long Pressed Name\
+---2023.07.30---\
+929. Unique Email Addresses\
+---2023.07.31---\
+933. Number of Recent Calls\
+---2023.08.01---\
+938. Range Sum of BST\
+---2023.08.02---\
+942. DI String Match\
+---2023.08.03---\
+944. Delete Columns to Make Sorted\
+---2023.08.04---\
+953. Verifying an Alien Dictionary\
+---2023.08.05---\
+961. N-Repeated Element in Size 2N Array\
+---2023.08.06---\
+965. Univalued Binary Tree
 
 
 
@@ -472,7 +585,17 @@ Solved Problems : 221
 ---2023.02.15---\
 38. Count and Say\
 ---2023.04.16---\
-12. Integer to Roman
+12. Integer to Roman\
+---2023.07.05---\
+6. Zigzag Conversion\
+---2023.07.09---\
+59. Spiral Matrix II\
+---2023.07.13---\
+80. Remove Duplicates from Sorted Array II\
+---2023.07.17---\
+82. Remove Duplicates from Sorted List II\
+---2023.07.20---\
+735. Asteroid Collision [Daily LeetCoding Challenge]
 
 
 
