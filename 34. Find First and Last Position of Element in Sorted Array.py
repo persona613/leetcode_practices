@@ -1,45 +1,41 @@
 """
-193 ms runtime beats 44.32%
-15.5 MB memory beats 10.86%
+73 ms runtime beats 97.56%
+17.8 MB memory beats 50.97%
 """
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
-        ans = [-1, -1]
-        if len(nums) == 0:
-            return ans
-        # left boundary
-        def findleft(nums, l, r, target):
-            m = (l+r) // 2
-            while l+1 < r:
+        n = len(nums)-1
+        def bs(l, r, side=None):
+            while l <= r:
+                m = (l+r)//2
                 if nums[m] == target:
-                    r = m
+                    if not side:
+                        return m
+                    elif side == "r":
+                        rs = bs(m+1, r, "r")
+                        if rs < 0:
+                            return m
+                        else:
+                            return rs
+                    else:
+                        ls = bs(l, m-1, "l")
+                        if ls < 0:
+                            return m
+                        else:
+                            return ls
                 elif nums[m] < target:
-                    l = m
-                m = (l+r) // 2
-            return r
-        # right boundary
-        def findright(nums, l, r, target):
-            m = (l+r) // 2
-            while l+1 < r:
-                if nums[m] == target:
-                    l = m
-                elif nums[m] > target:
-                    r = m
-                m = (l+r) // 2
-            return l
-        
-        l = -1
-        r = len(nums)
-        m = (l+r) // 2
-        while l+1 < r:
-            if nums[m] == target:
-                ans[0] = findleft(nums, l, m, target)
-                ans[1] = findright(nums, m, r, target)
-                return ans
-            elif nums[m] > target:
-                r = m
-            elif nums[m] < target:
-                l = m
-            m = (l+r) // 2
-        return ans
-            
+                    l = m+1
+                else:
+                    r = m-1
+            return -1
+
+        ret = bs(0, n)
+        if ret < 0:
+            return [-1, -1]
+        rs = bs(ret+1, n, "r")
+        if rs == -1:
+            rs = ret
+        ls = bs(0, ret-1, "l")
+        if ls == -1:
+            ls = ret
+        return [ls, rs]            
