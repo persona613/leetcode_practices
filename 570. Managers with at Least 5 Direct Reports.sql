@@ -1,6 +1,6 @@
-"""
+/*
 489 ms runtime beats 86.97%
-"""
+*/
 # Write your MySQL query statement below
 SELECT l.name
 FROM Employee l, Employee r

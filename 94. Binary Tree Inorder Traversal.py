@@ -1,8 +1,7 @@
 '''
-Runtime: 37 ms, faster than 78.25% of Python3 online submissions 
-Memory Usage: 13.9 MB, less than 59.35% of Python3 online submissions 
+34 ms runtime beats 82.28%
+16.18 MB memory beats 83.87%
 '''
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -11,14 +10,19 @@ Memory Usage: 13.9 MB, less than 59.35% of Python3 online submissions
 #         self.right = right
 class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        if not root: return []
+        stk = [root]
+        seen = set()
         res = []
-
-        def dfs(node):
-            if not node:
-                return
-            dfs(node.left)
-            res.append(node.val)
-            dfs(node.right)
-            
-        dfs(root)
+        while stk:
+            curr = stk.pop()
+            if curr not in seen:
+                seen.add(curr)
+                if curr.right:
+                    stk.append(curr.right)
+                stk.append(curr)
+                if curr.left:
+                    stk.append(curr.left)
+            else:
+                res.append(curr.val)
         return res

@@ -1,18 +1,11 @@
 """
-35 ms runtime beats 75.79%
-14 MB memory beats 11.61%
+35 ms runtime beats 69.29%
+17.21 MB memory beats 31.71%
 """
 class Solution:
     def climbStairs(self, n: int) -> int:
-        
-        cache = {}
-        def recur_cs(n):
-            if n in cache:
-                return cache[n]
-            if n < 3:
-                return n
-            res = recur_cs(n-1)+recur_cs(n-2)
-            cache[n] = res
-            return res
-        
-        return recur_cs(n)
+        dp = [0] * (n + 1)
+        dp[0] = dp[1] = 1
+        for i in range(2, n+1):
+            dp[i] = dp[i-1] + dp[i-2]
+        return dp[n]

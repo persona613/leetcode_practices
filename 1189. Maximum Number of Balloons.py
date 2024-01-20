@@ -1,14 +1,9 @@
 """
-43 ms runtime beats 64.18%
-16.5 MB memory beats 27.96%
+41 ms runtime beats 57.32%
+16.31 MB memory beats 47.48%
 """
 class Solution:
     def maxNumberOfBalloons(self, text: str) -> int:
-        ts = "balon"
-        cnt = {k:0 for k in ts}
-        for c in text:
-            if c in cnt:
-                cnt[c] += 1
-        cnt["l"] = cnt["l"] // 2
-        cnt["o"] = cnt["o"] // 2
-        return min(cnt.values())
+        # ts = "balon"
+        d = Counter(text)
+        return min(d["b"], d["a"], d["l"]//2, d["o"]//2, d["n"])

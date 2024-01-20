@@ -202,7 +202,86 @@
 1280. Students and Examinations\
 ---2023.10.23---\
 620. Not Boring Movies\
-1251. Average Selling Price
+1251. Average Selling Price\
+---2023.10.24---\
+1075. Project Employees I\
+1633. Percentage of Users Attended a Contest\
+---2023.10.25---\
+1211. Queries Quality and Percentage\
+---2023.10.26---\
+2356. Number of Unique Subjects Taught by Each Teacher\
+---2023.10.27---\
+1141. User Activity for the Past 30 Days I\
+---2023.10.28---\
+596. Classes More Than 5 Students\
+1729. Find Followers Count\
+---2023.10.29---\
+619. Biggest Single Number\
+---2023.10.30---\
+1731. The Number of Employees Which Report to Each Employee\
+1789. Primary Department for Each Employee\
+---2023.10.31---\
+610. Triangle Judgement\
+---2023.11.01---\
+501. Find Mode in Binary Search Tree\
+---2023.11.02---\
+1978. Employees Whose Manager Left the Company\
+---2023.11.05---\
+1667. Fix Names in a Table\
+---2023.11.06---\
+1527. Patients With a Condition\
+196. Delete Duplicate Emails\
+---2023.11.07---\
+1484. Group Sold Products By The Date\
+---2023.11.08---\
+1327. List the Products Ordered in a Period\
+1517. Find Users With Valid E-Mails
+
+**[ LT Interview Crash Course DSA ]**\
+--- Arrays and strings ---\
+---2023.11.27---\
+977. Squares of a Sorted Array (duplicate)\
+---2023.11.28---\
+643. Maximum Average Subarray I (duplicate)\
+---2023.12.03---\
+1480. Running Sum of 1d Array (duplicate)\
+1413. Minimum Value to Get Positive Step by Step Sum (duplicate)\
+2000. Reverse Prefix of Word\
+---2023.12.04---\
+1732. Find the Highest Altitude
+
+--- Hashing ---\
+---2023.12.04---\
+2351. First Letter to Appear Twice\
+1832. Check if the Sentence Is Pangram\
+268. Missing Number (duplicate)\
+1426. Counting Elements (premium)\
+---2023.12.05---\
+2248. Intersection of Multiple Arrays\
+1941. Check if All Characters Have Equal Number of Occurrences\
+---2023.12.10---\
+1133. Largest Unique Number (premium)\
+1189. Maximum Number of Balloons (duplicate)\
+---2023.12.16---\
+383. Ransom Note (duplicate)\
+1748. Sum of Unique Elements
+
+--- Linked lists ---\
+---2023.12.23---\
+876. Middle of the Linked List (duplicate * 2)\
+---2023.12.24---\
+83. Remove Duplicates from Sorted List (duplicate)
+
+--- Stacks and queues ---\
+---2024.01.03---\
+1544. Make The String Great\
+346. Moving Average from Data Stream (premium) (duplicate)\
+---2024.01.07---\
+496. Next Greater Element I
+
+--- Trees and graphs ---\
+---2024.01.20---\
+111. Minimum Depth of Binary Tree (duplicate)
 
 **[ Daily LeetCoding Challenge ]**\
 ---2023.09.22---\
@@ -222,7 +301,74 @@
 ---2023.10.19---\
 844. Backspace String Compare (duplicate)\
 ---2023.10.23---\
-342. Power of Four
+342. Power of Four\
+---2023.10.30---\
+1356. Sort Integers by The Number of 1 Bits (duplicate)\
+---2023.11.27---\
+346. Moving Average from Data Stream (premium)\
+---2023.11.29---\
+191. Number of 1 Bits\
+---2023.12.01---\
+1662. Check If Two String Arrays are Equivalent\
+---2023.12.02---\
+1160. Find Words That Can Be Formed by Characters (duplicate)\
+---2023.12.03---\
+1099. Two Sum Less Than K (premium)\
+1266. Minimum Time Visiting All Points (duplicate)\
+---2023.12.04---\
+2264. Largest 3-Same-Digit Number in String\
+---2023.12.05---\
+1688. Count of Matches in Tournament\
+---2023.12.06---\
+1716. Calculate Money in Leetcode Bank\
+---2023.12.07---\
+1903. Largest Odd Number in String\
+---2023.12.08---\
+606. Construct String from Binary Tree\
+---2023.12.09---\
+94. Binary Tree Inorder Traversal (duplicate)\
+---2023.12.10---\
+867. Transpose Matrix (duplicate)\
+---2023.12.11---\
+1287. Element Appearing More Than 25% In Sorted Array (duplicate)\
+---2023.12.12---\
+1464. Maximum Product of Two Elements in an Array (duplicate)\
+---2023.12.13---\
+1582. Special Positions in a Binary Matrix\
+---2023.12.15---\
+1436. Destination City (duplicate)\
+---2023.12.16---\
+242. Valid Anagram\
+---2023.12.18---\
+1913. Maximum Product Difference Between Two Pairs\
+---2023.12.19---\
+661. Image Smoother\
+---2023.12.20---\
+2706. Buy Two Chocolates\
+---2023.12.22---\
+1422. Maximum Score After Splitting a String\
+---2023.12.23---\
+1496. Path Crossing (duplicate)\
+---2023.12.24---\
+1758. Minimum Changes To Make Alternating Binary String\
+---2023.12.30---\
+1897. Redistribute Characters to Make All Strings Equal\
+---2023.12.31---\
+1624. Largest Substring Between Two Equal Characters\
+---2024.01.01---\
+455. Assign Cookies\
+---2024.01.08---\
+938. Range Sum of BST (duplicate)\
+---2024.01.09---\
+872. Leaf-Similar Trees (duplicate)\
+---2024.01.12---\
+1704. Determine if String Halves Are Alike\
+---2024.01.16---\
+1165. Single-Row Keyboard (premium)\
+---2024.01.17---\
+1207. Unique Number of Occurrences (duplicate)\
+---2024.01.18---\
+70. Climbing Stairs (duplicate)
 
 **[ Others ]**\
 ---2022.09.04---\
@@ -521,6 +667,38 @@
 1394. Find Lucky Integer in an Array\
 ---2023.10.16---\
 1399. Count Largest Group\
+---2023.11.09---\
+175. Combine Two Tables\
+---2023.11.10---\
+1071. Greatest Common Divisor of Strings\
+1403. Minimum Subsequence in Non-Increasing Order\
+---2023.11.11---\
+1598. Crawler Log Folder\
+---2023.11.13---\
+1413. Minimum Value to Get Positive Step by Step Sum\
+1417. Reformat The String\
+---2023.11.14---\
+1422. Maximum Score After Splitting a String\
+---2023.11.16---\
+1431. Kids With the Greatest Number of Candies\
+1436. Destination City\
+1437. Check If All 1's Are at Least Length K Places Away\
+---2023.11.17---\
+1446. Consecutive Characters\
+1450. Number of Students Doing Homework at a Given Time\
+---2023.11.18---\
+1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence\
+1460. Make Two Arrays Equal by Reversing Subarrays\
+---2023.11.21---\
+1464. Maximum Product of Two Elements in an Array\
+---2023.11.22---\
+1475. Final Prices With a Special Discount in a Shop\
+---2023.11.23---\
+1486. XOR Operation in an Array\
+---2023.11.24---\
+1491. Average Salary Excluding the Minimum and Maximum Salary\
+---2023.11.25---\
+1496. Path Crossing
 
 
 

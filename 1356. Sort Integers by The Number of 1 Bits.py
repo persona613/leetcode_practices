@@ -1,8 +1,7 @@
 """
-71 ms runtime beats 54.65%
-16.5 MB memory beats 31.85%
+65 ms runtime beats 74.71%
+16.25 MB memory beats 94.41%
 """
 class Solution:
     def sortByBits(self, arr: List[int]) -> List[int]:
-        arr.sort(key=lambda x: (x.bit_count(), x))
-        return arr
+        return sorted(arr, key=lambda x: (x.bit_count(), x))

@@ -6,6 +6,10 @@
 **[ Tibame AI classmates 2022 ]**\
 1679. Max Number of K-Sum Pairs
 
+**[ Arrays 101 ]**\
+---2023.11.27---\
+487. Max Consecutive Ones II (premium)
+
 **[ Linked List ]**\
 ---2022.09.05---\
 707. Design Linked List\
@@ -200,7 +204,96 @@
 ---2023.10.22---\
 570. Managers with at Least 5 Direct Reports\
 ---2023.10.23---\
-1934. Confirmation Rate
+1934. Confirmation Rate\
+---2023.10.25---\
+1193. Monthly Transactions I\
+1174. Immediate Food Delivery II\
+---2023.10.26---\
+550. Game Play Analysis IV\
+---2023.10.27---\
+1070. Product Sales Analysis III\
+---2023.10.29---\
+1045. Customers Who Bought All Products\
+---2023.10.31---\
+180. Consecutive Numbers\
+---2023.11.01---\
+1164. Product Price at a Given Date\
+1204. Last Person to Fit in the Bus\
+---2023.11.02---\
+1907. Count Salary Categories\
+626. Exchange Seats\
+---2023.11.03---\
+1341. Movie Rating\
+1321. Restaurant Growth\
+---2023.11.04---\
+602. Friend Requests II Who Has the Most Friends\
+585. Investments in 2016\
+---2023.11.07---\
+176. Second Highest Salary
+
+**[ LT Interview Crash Course DSA ]**\
+--- Arrays and strings ---\
+---2023.11.28---\
+1004. Max Consecutive Ones III\
+713. Subarray Product Less Than K\
+---2023.12.03---\
+2270. Number of Ways to Split Array\
+2090. K Radius Subarray Averages\
+---2023.12.04---\
+1456. Maximum Number of Vowels in a Substring of Given Length\
+1208. Get Equal Substrings Within Budget
+
+--- Hashing ---\
+---2023.12.05---\
+560. Subarray Sum Equals K\
+1248. Count Number of Nice Subarrays\
+---2023.12.10---\
+2225. Find Players With Zero or One Losses\
+525. Contiguous Array\
+---2023.12.11---\
+2260. Minimum Consecutive Cards to Pick Up\
+---2023.12.14---\
+2342. Max Sum of a Pair With Equal Sum of Digits\
+---2023.12.16---\
+2352. Equal Row and Column Pairs\
+3. Longest Substring Without Repeating Characters (duplicate)\
+451. Sort Characters By Frequency\
+930. Binary Subarrays With Sum\
+---2023.12.22---\
+1695. Maximum Erasure Value\
+---2023.12.23---\
+567. Permutation in String\
+791. Custom Sort String\
+1657. Determine if Two Strings Are Close
+
+--- Linked lists ---\
+---2023.12.24---\
+2130. Maximum Twin Sum of a Linked List\
+92. Reverse Linked List II\
+---2023.12.25---\
+2095. Delete the Middle Node of a Linked List\
+---2023.12.26---\
+1721. Swapping Nodes in a Linked List\
+---2023.12.27---\
+2074. Reverse Nodes in Even Length Groups
+
+--- Stacks and queues ---\
+---2023.12.29---\
+71. Simplify Path\
+---2024.01.04---\
+739. Daily Temperatures (duplicate)\
+---2024.01.07---\
+1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit\
+901. Online Stock Span\
+2390. Removing Stars From a String\
+2434. Using a Robot to Print the Lexicographically Smallest String\
+946. Validate Stack Sequences\
+---2024.01.14---\
+649. Dota2 Senate
+
+--- Trees and graphs ---\
+---2024.01.20---\
+1448. Count Good Nodes in Binary Tree
 
 **[ Daily LeetCoding Challenge ]**\
 ---2023.07.20---\
@@ -216,7 +309,7 @@
 ---2023.09.30---\
 456. 132 Pattern\
 ---2023.10.02---\
-2038. Remove Colored Pieces if Both Neighbors are the Same Color [Daily LeetCoding Challenge]\
+2038. Remove Colored Pieces if Both Neighbors are the Same Color\
 ---2023.10.03---\
 1512. Number of Good Pairs\
 ---2023.10.05---\
@@ -228,7 +321,112 @@
 ---2023.10.17---\
 1361. Validate Binary Tree Nodes\
 ---2023.10.20---\
-341. Flatten Nested List Iterator
+341. Flatten Nested List Iterator\
+---2023.10.24---\
+515. Find Largest Value in Each Tree Row\
+---2023.10.25---\
+779. K-th Symbol in Grammar (duplicate)\
+---2023.10.26---\
+823. Binary Trees With Factors\
+---2023.10.31---\
+2433. Find The Original Array of Prefix Xor\
+---2023.11.02---\
+2265. Count Nodes Equal to Average of Subtree\
+---2023.11.03---\
+1441. Build an Array With Stack Operations\
+---2023.11.04---\
+1503. Last Moment Before All Ants Fall Out of a Plank\
+---2023.11.05---\
+1535. Find the Winner of an Array Game\
+---2023.11.06---\
+1845. Seat Reservation Manager\
+---2023.11.07---\
+1921. Eliminate Maximum Number of Monsters\
+---2023.11.08---\
+2849. Determine if a Cell Is Reachable at a Given Time\
+---2023.11.09---\
+1759. Count Number of Homogenous Substrings\
+---2023.11.10---\
+1743. Restore the Array From Adjacent Pairs\
+---2023.11.13---\
+2785. Sort Vowels in a String\
+---2023.11.14---\
+1930. Unique Length-3 Palindromic Subsequences\
+---2023.11.15---\
+1846. Maximum Element After Decreasing and Rearranging\
+---2023.11.16---\
+1980. Find Unique Binary String\
+---2023.11.17---\
+1877. Minimize Maximum Pair Sum in Array\
+---2023.11.18---\
+1838. Frequency of the Most Frequent Element\
+---2023.11.19---\
+1887. Reduction Operations to Make the Array Elements Equal\
+---2023.11.20---\
+2391. Minimum Amount of Time to Collect Garbage\
+---2023.11.21---\
+1814. Count Nice Pairs in an Array\
+---2023.11.22---\
+1424. Diagonal Traverse II\
+---2023.11.23---\
+1630. Arithmetic Subarrays\
+624. Maximum Distance in Arrays (premium)\
+---2023.11.24---\
+1561. Maximum Number of Coins You Can Get\
+---2023.11.25---\
+1685. Sum of Absolute Differences in a Sorted Array\
+---2023.11.26---\
+1727. Largest Submatrix With Rearrangements\
+---2023.11.27---\
+935. Knight Dialer\
+---2023.11.28---\
+573. Squirrel Simulation (premium) * 2\
+---2023.11.29---\
+487. Max Consecutive Ones II\
+1057. Campus Bikes (premium)\
+---2023.12.08---\
+1120. Maximum Average Subtree\
+---2023.12.14---\
+2482. Difference Between Ones and Zeros in Row and Column\
+---2023.12.18---\
+2353. Design a Food Rating System\
+---2023.12.21---\
+1637. Widest Vertical Area Between Two Points Containing No Points\
+---2023.12.22---\
+159. Longest Substring with At Most Two Distinct Characters (premium)\
+---2023.12.25---\
+91. Decode Ways\
+---2023.12.26---\
+1155. Number of Dice Rolls With Target Sum\
+---2023.12.27---\
+1578. Minimum Time to Make Rope Colorful\
+---2024.01.02---\
+2610. Convert an Array Into a 2D Array With Conditions\
+---2024.01.03---\
+2125. Number of Laser Beams in a Bank\
+1066. Campus Bikes II\
+---2024.01.04---\
+2870. Minimum Number of Operations to Make Array Empty\
+---2024.01.06---\
+300. Longest Increasing Subsequence\
+---2024.01.09---\
+1428. Leftmost Column with at Least a One (premium)\
+---2024.01.10---\
+2385. Amount of Time for Binary Tree to Be Infected\
+---2024.01.11---\
+1026. Maximum Difference Between Node and Ancestor\
+---2024.01.13---\
+1347. Minimum Number of Steps to Make Two Strings Anagram\
+---2024.01.14---\
+1657. Determine if Two Strings Are Close (duplicate)\
+---2024.01.15---\
+2225. Find Players With Zero or One Losses (duplicate)\
+---2024.01.16---\
+380. Insert Delete GetRandom O(1) (duplicate)\
+---2024.01.19---\
+931. Minimum Falling Path Sum\
+---2024.01.20---\
+907. Sum of Subarray Minimums
 
 **[ Others ]**\
 ---2023.02.15---\
@@ -244,7 +442,9 @@
 ---2023.07.17---\
 82. Remove Duplicates from Sorted List II\
 ---2023.09.23---\
-5. Longest Palindromic Substring
+5. Longest Palindromic Substring\
+---2023.12.29---\
+443. String Compression
 
 
 

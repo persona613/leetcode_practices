@@ -1,19 +1,12 @@
-'''
-Runtime: 63 ms, faster than 83.61% of Python3 online submissions for Ransom Note.
-Memory Usage: 14.1 MB, less than 93.85% of Python3 online submissions for Ransom Note.
-'''
-
-
+"""
+61 ms runtime beats 59.70%
+16.65 MB memory beats 17.11%
+"""
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
-        ran_set = set(ransomNote)
-        mag_set = set(magazine)
-        if not ran_set <= mag_set:
-            return False
-        inter_set = ran_set & mag_set
-        for s in inter_set:
-            count_ran = ransomNote.count(s)
-            count_mag = magazine.count(s)
-            if count_ran > count_mag:
+        d = collections.Counter(magazine)
+        for c in ransomNote:
+            d[c] -= 1
+            if d[c] < 0:
                 return False
         return True

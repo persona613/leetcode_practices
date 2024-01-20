@@ -1,11 +1,10 @@
-
-'''
-Runtime: 77 ms, faster than 24.35% of Python3 online submissions for Running Sum of 1d Array.
-Memory Usage: 14 MB, less than 72.68% of Python3 online submissions for Running Sum of 1d Array.
-'''
+"""
+43 ms runtime beats 75.40%
+16.66 MB memory beats 6.32%
+"""
 class Solution:
     def runningSum(self, nums: List[int]) -> List[int]:
-        for i in range(1, len(nums)):
-            nums[i] = nums[i] + nums[i-1]
-        return nums
-
+        res = [nums[0]]
+        for v in nums[1:]:
+            res.append(v + res[-1])
+        return res

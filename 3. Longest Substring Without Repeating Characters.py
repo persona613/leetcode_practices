@@ -1,26 +1,22 @@
-'''
-Runtime: 2190 ms, faster than 5.58% of Python3 online submissions 
-Memory Usage: 14.0 MB, less than 50.82% of Python3 online submissions
-'''
-
+"""
+236 ms runtime beats 14.30%
+17.64 MB memory beats 7.98%
+"""
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        ans = set()
-        count = 0
-        bag = set()
-        i = 0
-        j = 0
-        while j < len(s):
-            if s[j] in bag:
-                ans.add(count)
-                count = 0
-                bag.clear()
-                i += 1
-                j = i
-            else:
-                bag.add(s[j])
-                count += 1
-                j += 1
-        
-        ans.add(count)
-        return max(ans)   
+        # d={char:index of char}
+        # -1 means no char appear before curr
+        d = defaultdict(lambda: [-1, -1])
+        ans = 0
+        for i in range(len(s)):
+            c = s[i]
+            k = d[c][-1]
+            # check other char position
+            # position[-2] means repate
+            for cha in d:
+                if d[cha][-2] > k:
+                    k = d[cha][-2]
+            if i - k > ans:
+                ans = i - k
+            d[c].append(i)
+        return ans

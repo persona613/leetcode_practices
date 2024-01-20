@@ -1,32 +1,37 @@
-'''
-Runtime: 2593 ms, faster than 0% of Python3 online submissions 
-Memory Usage: 61.3 MB, less than 57.49% of Python3 online submissions
-'''
+"""
+280 ms runtime beats 84.29%
+64.26 MB memory beats 39.43%
+"""
 class RandomizedSet:
 
     def __init__(self):
-        self.set = set()
+        self.dic = dict()
+        self.arr = list()
 
     def insert(self, val: int) -> bool:
-        if val not in self.set:
-            self.set.add(val)
+        if val not in self.dic:
+            self.dic[val] = len(self.arr)
+            self.arr.append(val)
             return True
         else:
             return False
 
     def remove(self, val: int) -> bool:
-        if val in self.set:
-            self.set.remove(val)
+        if val in self.dic:
+            t = self.dic[val]
+            self.arr[t], self.arr[-1] = self.arr[-1], self.arr[t]
+            v = self.arr[t]
+            self.dic[v] = t
+
+            del self.dic[val]
+            self.arr.pop()
             return True
         else:
-            return False
+            False
 
     def getRandom(self) -> int:
-        import random
-        n = len(self.set)
-        r = random.randint(1, n) # include n
-        lst = [x for x in self.set]
-        return lst[r-1]
+        i = random.randrange(len(self.arr))
+        return self.arr[i]
 
 
 # Your RandomizedSet object will be instantiated and called as such:

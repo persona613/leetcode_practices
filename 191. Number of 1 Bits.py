@@ -1,8 +1,13 @@
 """
-47 ms runtime beats 62.6%
-16.3 MB memory beats 60.39%
+51 ms runtime beats 5.22%
+16.27 MB memory beats 32.07%
 """
 class Solution:
     def hammingWeight(self, n: int) -> int:
-        bs = bin(n)[2:]
-        return bs.count("1")
+        bit = 0
+        mask = 1
+        for _ in range(32):
+            if n & mask != 0:
+                bit += 1
+            mask <<= 1
+        return bit

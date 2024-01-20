@@ -1,6 +1,6 @@
 """
-42 ms runtime beats 88.19%
-16.5 MB memory beats 27.85%
+31 ms runtime beats 94.80%
+17.38 MB memory beats 18.13%
 """
 # Definition for a binary tree node.
 # class TreeNode:
@@ -9,16 +9,12 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def getleafs(self, root):
-        res = []
-        def dfs(root):
-            if not root: return
-            if not root.left and not root.right:
-                res.append(root.val)
-                return
-            dfs(root.left)
-            dfs(root.right)
-        dfs(root)
-        return res
     def leafSimilar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool:
-        return self.getleafs(root1) == self.getleafs(root2)
+        def dfs(node):
+            if not node: return
+            if not node.left and not node.right:
+                yield node.val
+            yield from dfs(node.left)
+            yield from dfs(node.right)
+        
+        return list(dfs(root1)) == list(dfs(root2))

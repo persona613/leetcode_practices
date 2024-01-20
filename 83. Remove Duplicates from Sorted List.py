@@ -1,6 +1,6 @@
 """
-38 ms runtime beats 91.2%
-13.8 MB memory beats 62.74%
+42 ms runtime beats 81.98%
+17.14 MB memory beats 10.34%
 """
 # Definition for singly-linked list.
 # class ListNode:
@@ -9,9 +9,11 @@
 #         self.next = next
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        curr = head
-        while curr:
-            while curr.next and curr.val == curr.next.val:
-                curr.next = curr.next.next
-            curr = curr.next
+        cur = head
+        while cur and cur.next:
+            if cur.val == cur.next.val:
+                cur.next = cur.next.next
+            else:
+                cur = cur.next
         return head
+        

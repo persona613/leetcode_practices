@@ -1,6 +1,6 @@
 """
-494 ms runtime beats 93.8%
-49.4 MB memory beats 83.36%
+223 ms runtime beats 96.33%
+43.58 MB memory beats 99.68%
 """
 # Definition for a binary tree node.
 # class TreeNode:
@@ -10,17 +10,12 @@
 #         self.right = right
 class Solution:
     def minDepth(self, root: Optional[TreeNode]) -> int:
-        if not root: return 0
-        q = deque([root])
-        d = 1 # depth
-        while q:
-            for _ in range(len(q)):
-                curr = q.popleft()
-                if not curr.left and not curr.right:
-                    return d
-                if curr.left: 
-                    q.append(curr.left)
-                if curr.right: 
-                    q.append(curr.right)                
-            d += 1
+        if not root:
+            return 0
+        if root.left and root.right:
+            return min(self.minDepth(root.left), self.minDepth(root.right)) + 1
+        if root.left:
+            return self.minDepth(root.left) + 1
+        return self.minDepth(root.right) + 1
+
 

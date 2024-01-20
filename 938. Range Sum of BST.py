@@ -1,6 +1,6 @@
 """
-151 ms runtime beats 99.54%
-25.2 MB memory beats 48.75%
+111 ms runtime beats 96.17%
+24.68 MB memory beats 74.35%
 """
 # Definition for a binary tree node.
 # class TreeNode:
@@ -10,15 +10,16 @@
 #         self.right = right
 class Solution:
     def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
-        if not root:
-            return 0            
-        if root.val < low:
-            return self.rangeSumBST(root.right, low, high)
-        elif root.val == low:
-            return root.val + self.rangeSumBST(root.right, low, high)
-        elif low < root.val < high:
-            return root.val + self.rangeSumBST(root.left, low, high) + self.rangeSumBST(root.right, low, high)
-        elif root.val == high:
-            return root.val + self.rangeSumBST(root.left, low, high)
-        elif root.val > high:
-            return self.rangeSumBST(root.left, low, high)
+        def dfs(node):
+            nonlocal ans
+            if not node:
+                return
+            if low <= node.val <= high:
+                ans += node.val
+            if low < node.val:
+                dfs(node.left)
+            if node.val < high:
+                dfs(node.right)
+        ans = 0
+        dfs(root)
+        return ans
