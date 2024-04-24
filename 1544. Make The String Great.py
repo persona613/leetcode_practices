@@ -1,19 +1,13 @@
 """
-38 ms runtime beats 77.0%
-17.34 MB memory beats 7.92%
+34 ms runtime beats 78.84%
+16.58 MB memory beats 46.83%
 """
 class Solution:
     def makeGood(self, s: str) -> str:
         stk = []
         for c in s:
-            if not stk:
-                stk.append(c)
+            if stk and abs(ord(c) - ord(stk[-1])) == 32:
+                stk.pop()
             else:
-                p = stk[-1]
-                if p.isupper() and p.lower()==c:
-                    stk.pop()
-                elif p.islower() and p.upper()==c:
-                    stk.pop()
-                else:
-                    stk.append(c)
+                stk.append(c)
         return "".join(stk)

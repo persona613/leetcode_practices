@@ -1,36 +1,18 @@
 """
-694 ms runtime beats 15.87%
-22.7 MB memory beats 21.62%
+343 ms runtime beats 93.21%
+16.94 MB memory beats 65.66%
 """
 class Solution:
     def islandPerimeter(self, grid: List[List[int]]) -> int:
-        def dfs(i, j):
-            nonlocal ans
-            seen[i].append(j)
-            for d in [1, -1]:
-                if i+d < 0 or i+d > len(grid)-1:
-                    ans += 1
-                elif grid[i+d][j] == 0:
-                    ans += 1
-                else:
-                    if j not in seen[i+d]:
-                        dfs(i+d, j)
-                if j+d < 0 or j+d > len(grid[0])-1:
-                    ans += 1
-                elif grid[i][j+d] == 0:
-                    ans += 1
-                else:
-                    if j+d not in seen[i]:
-                        dfs(i, j+d)               
+        m = len(grid)
+        n = len(grid[0])
         ans = 0
-        seen = defaultdict(list) # {i: [j]}
-        for i in range(len(grid)):
-            find = False
-            for j in range(len(grid[0])):
+        for i in range(m):
+            for j in range(n):
                 if grid[i][j] == 1:
-                    find = True
-                    break
-            if find:
-                break
-        dfs(i, j)
-        return ans       
+                    ans += 4
+                    if i > 0 and grid[i - 1][j] == 1:
+                        ans -= 2
+                    if j > 0 and grid[i][j - 1] == 1:
+                        ans -= 2
+        return ans

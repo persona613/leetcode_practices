@@ -1,14 +1,15 @@
 """
-40 ms runtime beats 51.82%
-16 MB memory beats 100%
+34 ms runtime beats 61.07%
+16.51 MB memory beats 35.36%
 """
 class Solution:
     def maximum69Number (self, num: int) -> int:
-        return int(str(num).replace("6", "9", 1))
-
-        # lst = list(str(num))
-        # for i in range(len(lst)):
-        #     if lst[i] == "6":
-        #         lst[i] = "9"
-        #         return int("".join(lst))
-        # return num
+        first_six = -1
+        digit = 0
+        val = num
+        while val:
+            if val % 10 == 6:
+                first_six = digit
+            val //= 10
+            digit += 1
+        return num if first_six == -1 else num + 3 * 10 ** first_six

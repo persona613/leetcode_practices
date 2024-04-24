@@ -1,41 +1,30 @@
 '''
-Runtime: 35 ms, faster than 87.01% of Python3 online submissions 
-Memory Usage: 13.9 MB, less than 76.17% of Python3 online submissions
+Runtime: 39 ms, faster than 41.34% of Python3 online submissions 
+Memory Usage: 16.62 MB, less than 59.46% of Python3 online submissions
 '''
-
 class MyQueue:
 
     def __init__(self):
-        self.insk = []
-        self.otsk = []
+        self.instk = []
+        self.otstk = []
 
     def push(self, x: int) -> None:
-        self.insk.append(x)
+        self.instk.append(x)
 
     def pop(self) -> int:
-        if self.empty():
-            return None
-        
-        if not self.otsk:
-            while self.insk:
-                n = self.insk.pop()
-                self.otsk.append(n)
-        return self.otsk.pop()            
+        if not self.otstk:
+            while self.instk:
+                self.otstk.append(self.instk.pop())
+        return self.otstk.pop()     
 
     def peek(self) -> int:
-        if self.empty():
-            return None
-        
-        if not self.otsk:
-            while self.insk:
-                n = self.insk.pop()
-                self.otsk.append(n)
-        return self.otsk[-1]
+        if self.otstk:
+            return self.otstk[-1]
+        else:
+            return self.instk[0]
 
     def empty(self) -> bool:
-        if self.insk or self.otsk:
-            return False
-        return True
+        return not self.instk and not self.otstk
 
 
 # Your MyQueue object will be instantiated and called as such:

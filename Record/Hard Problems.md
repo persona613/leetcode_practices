@@ -23,7 +23,52 @@
 **[ LT Interview Crash Course DSA ]**\
 --- Stacks and queues ---\
 ---2024.01.04---\
-239. Sliding Window Maximum
+239. Sliding Window Maximum\
+---2024.03.01---\
+1063. Number of Valid Subarrays\
+---2024.03.03---\
+1944. Number of Visible People in a Queue\
+2398. Maximum Number of Robots Within Budget
+
+--- Trees and graphs ---\
+---2024.02.02---\
+1293. Shortest Path in a Grid with Obstacles Elimination\
+---2024.02.07---\
+127. Word Ladder
+
+--- Heaps ---\
+---2024.03.13---\
+295. Find Median from Data Stream\
+---2024.03.18---\
+632. Smallest Range Covering Elements from K Lists\
+---2024.04.03---\
+480. Sliding Window Median
+
+--- Greedy ---\
+502. IPO\
+---2024.03.21---\
+2136. Earliest Possible Day of Full Bloom\
+1326. Minimum Number of Taps to Open to Water a Garden
+
+--- Binary search ---\
+---2024.03.23---\
+1231. Divide Chocolate (premium)\
+410. Split Array Largest Sum
+---2024.03.26---\
+2141. Maximum Running Time of N Computers\
+778. Swim in Rising Water\
+1970. Last Day Where You Can Still Cross\
+2258. Escape the Spreading Fire
+
+--- Backtracking ---\
+---2024.03.28---\
+980. Unique Paths III
+
+--- Dynamic programming ---\
+---2024.04.06---\
+188. Best Time to Buy and Sell Stock IV\
+---2024.04.24---\
+2218. Maximum Value of K Coins From Piles
 
 **[ Daily LeetCoding Challenge ]**\
 ---2022.10.10---\
@@ -68,7 +113,31 @@
 ---2024.01.06---\
 1235. Maximum Profit in Job Scheduling\
 ---2024.01.07---\
-446. Arithmetic Slices II - Subsequence
+446. Arithmetic Slices II - Subsequence\
+---2024.01.30---\
+1074. Number of Submatrices That Sum to Target [Time Travel Ticket for 01.28]\
+---2024.02.04---\
+76. Minimum Window Substring\
+---2024.02.14---\
+1463. Cherry Pickup II [Time Travel Ticket for 02.11]\
+---2024.02.18---\
+2402. Meeting Rooms III\
+---2024.02.24---\
+2092. Find All People With Secret\
+---2024.02.25---\
+2709. Greatest Common Divisor Traversal\
+---2024.03.26---\
+41. First Missing Positive\
+---2024.03.30---\
+992. Subarrays with K Different Integers\
+---2024.03.31---\
+2444. Count Subarrays With Fixed Bounds\
+---2024.04.13---\
+42. Trapping Rain Water\
+84. Largest Rectangle in Histogram (help probelm 85.)\
+85. Maximal Rectangle\
+---2024.04.23---\
+305. Number of Islands II (premium)
 
 **[ Others ]**
 

@@ -1,22 +1,17 @@
 """
-268 ms runtime beats 36.51%
-21.2 MB memory beats 69.27%
+159 ms runtime beats 85.53%
+23.53 MB memory beats 94.34%
 """
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        ans = [None]*len(nums)
-        lsum = 1
-        rsum = 1
-        for i in range(1, len(nums)):
-            j = len(nums)-1-i
-            lsum = lsum * nums[i-1]
-            rsum = rsum * nums[j+1]
-            if ans[i] != None:
-                ans[i] = ans[i] * lsum
-            else:
-                ans[i] = lsum
-            if ans[j] != None:
-                ans[j] = ans[j] * rsum
-            else:
-                ans[j] = rsum
-        return ans
+        res = []
+        sm = 1
+        for v in nums:
+            sm *= v
+            res.append(sm)
+        sm = 1
+        for i in range(len(nums) - 1, 0, -1):
+            res[i] = res[i - 1] * sm
+            sm *= nums[i]
+        res[0] = sm
+        return res

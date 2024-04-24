@@ -1,44 +1,44 @@
 """
-Runtime: 2906 ms, faster than 15.16% of Python3 online submissions 
-Memory Usage: 14.9 MB, less than 96.46% of Python3 online submissions
+Runtime: 242 ms, faster than 95.97% of Python3 online submissions 
+Memory Usage: 18.29 MB, less than 23.87% of Python3 online submissions
 """
-
 class Solution:
     def openLock(self, deadends: List[str], target: str) -> int:
-        seen = defaultdict(list)
-        detect = ["0000"]
-        start = 0
-        tail = 0
-        res = 0        
-        
+        if target == "0000":
+            return 0
         if "0000" in deadends:
             return -1
-        if "0000" == target:
-            return 0
-        
-        while start <= tail:
-            # check string numbers on current pace
-            size = tail-start+1
-            for _ in range(size):
-                curr = detect[start]
+
+        # next-slot
+        ns = {"0": "1", "1": "2", "2": "3", "3": "4", "4": "5",
+            "5": "6", "6": "7", "7": "8", "8": "9", "9": "0"}
+        # pre-slot
+        ps = {"0": "9", "1": "0", "2": "1", "3": "2", "4": "3",
+            "5": "4", "6": "5", "7": "6", "8": "7", "9": "8"}
+        deads = set()
+        for dd in deadends:
+            deads.add(tuple(dd))
+
+        start = "0000"
+        tg = list(target)
+        q = deque([list(start)])
+        seen = {tuple(start)}
+        ans = 1
+        while q:
+            n = len(q)
+            for _ in range(n):
+                curr = q.popleft()
                 for i in range(4):
-                    for increment in {1,-1}:
-                        newd = (int(curr[i]) + increment) % 10
-                        dis = [d for d in curr]
-                        dis[i] = str(newd)
-                        dis = "".join(dis)
-                   
-                        if dis in seen[dis[0]+dis[1]]:
-                            continue                
-                        if dis == target:
-                            return res+1
-                        if dis not in deadends:
-                            detect.append(dis)
-                            tail += 1
-                        seen[dis[0]+dis[1]].append(dis)
-            
-                start += 1
-            res += 1
-        return -1
-            
-        
+                    slot = curr[i]
+                    adjs = [ps[slot], ns[slot]]
+                    for adj in adjs:
+                        curr[i] = adj
+                        if curr == tg:
+                            return ans
+                        tcurr = tuple(curr)
+                        if tcurr not in deads and tcurr not in seen:
+                            seen.add(tcurr)
+                            q.append(curr[:])
+                    curr[i] = slot
+            ans += 1
+        return -1        

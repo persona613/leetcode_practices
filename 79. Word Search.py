@@ -1,43 +1,35 @@
 """
-5077 ms runtime beats 74.16%
-14 MB memory beats 46.2%
+4585 ms runtime beats 37.36%
+16.66 MB memory beats 26.43%
 """
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
         
-        def findnext(k, i, j):
-            nonlocal sta, end
-            for d in [1,-1]:
-                if i+d < len(board) and i+d > -1:
-                    if board[i+d][j] == word[k]:
-                        if k == end:
-                            return True
-                        board[i+d][j] = "#"
-                        if findnext(k+1, i+d, j):
-                            return True
-                        else:
-                            board[i+d][j] = word[k]
-                if j+d < len(board[0]) and j+d > -1:
-                    if board[i][j+d] == word[k]:
-                        if k == end:
-                            return True
-                        board[i][j+d] = "#"
-                        if findnext(k+1, i, j+d):
-                            return True
-                        else:
-                            board[i][j+d] = word[k]
-            return False                
+        def backtrack(i, j, k) -> bool:
+            if board[i][j] != word[k]:
+                return False
+            if k == p:
+                return True
 
-        sta = 0
-        end = len(word)-1
-        for i in range(len(board)):
-            for j in range(len(board[0])):
-                if board[i][j] == word[0]:
-                    if sta == end:
+            board[i][j] = "#"
+            for di, dj in dirs:
+                ni = i + di
+                nj = j + dj
+                if valid(ni, nj) and board[ni][nj] != "#":
+                    if backtrack(ni, nj, k + 1):
                         return True
-                    board[i][j] = "#"
-                    if findnext(sta+1,i,j):
-                        return True
-                    else:
-                        board[i][j] = word[0]
+            board[i][j] = word[k]
+            return False
+
+        def valid(i, j):
+            return 0 <= i < m and 0 <= j < n
+
+        dirs = list(zip([0, 0, 1, -1], [1, -1, 0, 0]))
+        m = len(board)
+        n = len(board[0])
+        p = len(word) - 1
+        for i in range(m):
+            for j in range(n):
+                if backtrack(i, j, 0):
+                    return True
         return False

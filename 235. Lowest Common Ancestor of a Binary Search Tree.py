@@ -1,6 +1,6 @@
 """
-77 ms runtime beats 90.4%
-18.7 MB memory beats 64.79%
+57 ms runtime beats 63.13%
+20.45 MB memory beats 72.75%
 """
 # Definition for a binary tree node.
 # class TreeNode:
@@ -11,8 +11,9 @@
 
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        if root.val > p.val and root.val > q.val:
-            return self.lowestCommonAncestor(root.left, p, q)
-        elif root.val < p.val and root.val < q.val:
+        if p.val < root.val and q.val < root.val:
+            return self.lowestCommonAncestor(root.left, p, q)        
+        elif p.val > root.val and q.val > root.val:
             return self.lowestCommonAncestor(root.right, p, q)
-        return root
+        else:
+            return root

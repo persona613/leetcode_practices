@@ -281,7 +281,36 @@
 
 --- Trees and graphs ---\
 ---2024.01.20---\
-111. Minimum Depth of Binary Tree (duplicate)
+111. Minimum Depth of Binary Tree (duplicate)\
+---2024.01.21---\
+543. Diameter of Binary Tree (duplicate)\
+---2024.01.30---\
+530. Minimum Absolute Difference in BST\
+270. Closest Binary Search Tree Value\
+---2024.01.31---\
+1971. Find if Path Exists in Graph\
+323. Number of Connected Components in an Undirected Graph * 2
+
+--- Heaps ---\
+---2024.03.07---\
+1046. Last Stone Weight\
+---2024.03.13---\
+703. Kth Largest Element in a Stream
+
+--- Greedy ---\
+---2024.03.19---\
+1323. Maximum 69 Number\
+1710. Maximum Units on a Truck\
+1196. How Many Apples Can You Put into the Basket (premium)
+
+--- Binary search ---\
+---2024.03.21---\
+35. Search Insert Position (duplicate)\
+2389. Longest Subsequence With Limited Sum
+
+--- Dynamic programming ---\
+---2024.03.28---\
+746. Min Cost Climbing Stairs (duplicate)
 
 **[ Daily LeetCoding Challenge ]**\
 ---2023.09.22---\
@@ -368,7 +397,69 @@
 ---2024.01.17---\
 1207. Unique Number of Occurrences (duplicate)\
 ---2024.01.18---\
-70. Climbing Stairs (duplicate)
+70. Climbing Stairs (duplicate)\
+---2024.01.22---\
+645. Set Mismatch\
+---2024.01.29---\
+232. Implement Queue using Stacks (duplicate)\
+---2024.02.01---\
+293. Flip Game (premium)\
+---2024.02.06---\
+387. First Unique Character in a String (duplicate)\
+---2024.02.12---\
+169. Majority Element_01 (duplicate)\
+---2024.02.13---\
+2108. Find First Palindromic String in the Array\
+---2024.02.19---\
+231. Power of Two (duplicate)\
+---2024.02.20---\
+268. Missing Number (duplicate)\
+---2024.02.22---\
+997. Find the Town Judge\
+---2024.02.26---\
+100. Same Tree\
+---2024.02.27---\
+543. Diameter of Binary Tree\
+---2024.03.01---\
+2864. Maximum Odd Binary Number\
+3062. Winner of the Linked List Game (premium)\
+---2024.03.02---\
+977. Squares of a Sorted Array\
+---2024.03.06---\
+141. Linked List Cycle\
+---2024.03.07---\
+876. Middle of the Linked List (duplicate)\
+---2024.03.08---\
+3005. Count Elements With Maximum Frequency\
+---2024.03.09---\
+2540. Minimum Common Value\
+---2024.03.10---\
+349. Intersection of Two Arrays (duplicate)\
+2485. Find the Pivot Integer\
+---2024.03.21---\
+206. Reverse Linked List\
+---2024.03.22---\
+234. Palindrome Linked List\
+1119. Remove Vowels from a String (premium)\
+---2024.04.01---\
+58. Length of Last Word (duplicate) \
+---2024.04.02---\
+205. Isomorphic Strings (duplicate)\
+---2024.04.04---\
+1614. Maximum Nesting Depth of the Parentheses\
+---2024.04.05---\
+1544. Make The String Great (duplicate)\
+---2024.04.08---\
+1700. Number of Students Unable to Eat Lunch\
+---2024.04.09---\
+2073. Time Needed to Buy Tickets\
+---2024.04.14---\
+404. Sum of Left Leaves\
+1469. Find All The Lonely Nodes (premium)\
+---2024.04.18---\
+463. Island Perimeter\
+---2024.04.24---\
+1137. N-th Tribonacci Number
 
 **[ Others ]**\
 ---2022.09.04---\

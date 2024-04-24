@@ -1,17 +1,19 @@
 """
-251 ms runtime beats 8.54%
-18.82 MB memory beats 9.37%
+148 ms runtime beats 89.18%
+19.04 MB memory beats 35.01%
 """  
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        res = [None] * n
         l = 0
-        r = len(nums) - 1
-        q = deque()
-        while l <= r:
-            if nums[l]**2 >= nums[r]**2:
-                q.appendleft(nums[l]**2)
+        r = n - 1
+        for i in range(n - 1, -1, -1):
+            if abs(nums[l]) > abs(nums[r]):
+                sq = nums[l]
                 l += 1
             else:
-                q.appendleft(nums[r]**2)
+                sq = nums[r]
                 r -= 1
-        return q
+            res[i] = sq * sq
+        return res

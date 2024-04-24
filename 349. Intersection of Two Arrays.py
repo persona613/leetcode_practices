@@ -1,34 +1,15 @@
-'''
-Runtime: 54 ms, faster than 86.43% of Python3 online submissions 
-Memory Usage: 14.1 MB, less than 69.66% of Python3 online submissions
-'''
-
+"""
+44 ms runtime beats 80.11%
+16.66 MB memory beats 91.42%
+"""
 class Solution:
-    def bs(self, nums, key):
-        l = 0
-        r = len(nums)-1
-        while l <= r:
-            m = (l+r)//2
-            if nums[m] == key:
-                return True
-            elif nums[m] < key:
-                l = m+1
-            else:
-                r = m-1
-        return False
-    
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        d = dict()
         res = []
-        if len(nums1) < len(nums2):
-            a = set(nums1)
-            nums2.sort()
-            for d in a:
-                if self.bs(nums2, d) is True:
-                    res.append(d)
-        else:
-            a = set(nums2)
-            nums1.sort()
-            for d in a:
-                if self.bs(nums1, d) is True:
-                    res.append(d)
+        for v in nums1:
+            d[v] = 1
+        for v in nums2:
+            if v in d and d[v] == 1:
+                res.append(v)
+                d[v] -= 1
         return res

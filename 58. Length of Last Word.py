@@ -1,15 +1,8 @@
 """
-37 ms runtime beats 48%
-13.9 MB memory beats 74.78%
+28 ms runtime beats 91.57%
+16.70 MB memory beats 6.34%
 """
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-        ans = 0
-        for i in range(-1, -len(s)-1, -1):
-            if s[i] == " ":
-                if ans == 0:
-                    continue
-                break
-            ans += 1
-        return ans
+        return len(s.split()[-1])
                 

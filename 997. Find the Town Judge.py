@@ -1,18 +1,17 @@
 """
-675 ms runtime beats 85.6%
-22.1 MB memory beats 41.14%
+594 ms runtime beats 83.67%
+21.54 MB memory beats 86.28%
 """
 class Solution:
     def findJudge(self, n: int, trust: List[List[int]]) -> int:
-        if n == 1: return n
-        if not trust: return -1
-        mt = dict() # map of trust count
-        seen = set()
-        for ts in trust:
-            mt[ts[1]] = mt.get(ts[1], 0) + 1
-            seen.add(ts[0])
-        for k, v in mt.items():
-            if v == n-1 and k not in seen:
-                return k
+        if len(trust) < n - 1:
+            return -1
+        ind = [0] * (n + 1)
+        out = [0] * (n + 1)
+        for a, b in trust:
+            out[a] += 1
+            ind[b] += 1
+        for i in range(1, n + 1):
+            if ind[i] == n - 1 and out[i] == 0:
+                return i
         return -1
-

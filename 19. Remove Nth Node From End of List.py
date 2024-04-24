@@ -1,7 +1,7 @@
-'''
-Runtime: 45 ms, faster than 69.41% of Python3 online submissions 
-Memory Usage: 13.9 MB, less than 0% of Python3 online submissions
-'''
+"""
+31 ms runtime beats 90.22%
+16.61 MB memory beats 33.81%
+"""
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
@@ -9,25 +9,12 @@ Memory Usage: 13.9 MB, less than 0% of Python3 online submissions
 #         self.next = next
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
-        i = head
-        j = head
-        cnt = 0
-        prev = head
-        # sz = 1
-        while head.next == None and n == 1:
-            head = head.next
-            return head
-        while cnt != n:
-            j = j.next
-            cnt += 1
-        # n = remnove head node
-        if j == None:
-            head = head.next
-            return head
-        while j:
-            j = j.next
-            prev = i
-            i = i.next
-        prev.next = i.next
-        return head
+        fast = slow = dummy = ListNode(0, head)
+        for _ in range(n + 1):
+            fast = fast.next
+        while fast:
+            fast = fast.next
+            slow = slow.next
+        slow.next = slow.next.next
+        return dummy.next
             

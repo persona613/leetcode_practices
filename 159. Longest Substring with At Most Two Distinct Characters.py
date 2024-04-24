@@ -1,19 +1,17 @@
 """
-174 ms runtime beats 99.25%
-17.88 MB memory beats 12.38%
+173 ms runtime beats 93.73%
+17.01 MB memory beats 97.31%
 """
 class Solution:
     def lengthOfLongestSubstringTwoDistinct(self, s: str) -> int:
         d = defaultdict(int)
-        l = ans = 0
-        for r in range(len(s)):
-            d[s[r]] += 1
-            if len(d) <= 2:
-                ans = max(ans, r - l + 1)
-            else:
-                if d[s[l]] > 1:
-                    d[s[l]] -= 1
-                else:
+        l = 0
+        for a in s:
+            d[a] += 1
+            if len(d) > 2:
+                if d[s[l]] == 1:
                     del d[s[l]]
+                else:
+                    d[s[l]] -= 1
                 l += 1
-        return ans
+        return len(s) - l

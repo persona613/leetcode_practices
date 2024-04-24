@@ -1,6 +1,6 @@
 """
-49 ms runtime beats 5.35%
-17.3 MB memory beats 5.53%
+30 ms runtime beats 90.67%
+16.75 MB memory beats 47.79%
 """
 # Definition for a binary tree node.
 # class TreeNode:
@@ -10,16 +10,13 @@
 #         self.right = right
 class Solution:
     def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
-        ans = 0
-        # left child = 1, right child = 0
-        def dfs(root: Optional[TreeNode], child: int) -> int:
-            nonlocal ans
-            if not root.left and not root.right and child == 1:
-                ans += root.val
-            if root.left:
-                dfs(root.left, 1)
-            if root.right:
-                dfs(root.right, 0)
-        dfs(root, 0)
-        return ans
 
+        def dfs(node, isleft: bool) -> int:
+            if not node:
+                return 0
+            if not node.left and not node.right:
+                return node.val if isleft else 0
+
+            return dfs(node.left, True) + dfs(node.right, False)
+        
+        return dfs(root, False)

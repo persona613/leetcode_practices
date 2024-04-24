@@ -1,16 +1,11 @@
 '''
-Runtime: 186 ms, faster than 70.69% of Python3 online submissions 
-Memory Usage: 17.1 MB, less than 96.07% of Python3 online submissions
+Runtime: 90 ms, faster than 64.88% of Python3 online submissions 
+Memory Usage: 20.91 MB, less than 43.88% of Python3 online submissions
 '''
-
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        ans = {}
-        
+        g = defaultdict(list)
         for st in strs:
-            sor = "".join(sorted(st))
-            if sor in ans:
-                ans[sor].append(st)
-            else:
-                ans[sor] = [st]
-        return list(ans.values())
+            k = tuple(sorted(st))
+            g[k].append(st)
+        return g.values()

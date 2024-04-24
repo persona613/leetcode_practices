@@ -1,7 +1,7 @@
-'''
-Runtime: 112 ms, faster than 16.15% of Python3 online submissions 
-Memory Usage: 17.7 MB, less than 30.75% of Python3 online submissions
-'''
+"""
+52 ms runtime beats 19.52%
+19.06 MB memory beats 79.81%
+"""
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
@@ -10,18 +10,11 @@ Memory Usage: 17.7 MB, less than 30.75% of Python3 online submissions
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
-        if head == None:
-            return False
-        fast = head
-        slow = head
-        
-        while True:
-            if fast.next == None:
-                return False
-            if fast.next.next == None:
-                return False
+        if not head: return False
+        fast = slow = head
+        while fast.next and fast.next.next:
             fast = fast.next.next
             slow = slow.next
-            if fast == slow:
+            if fast is slow:
                 return True
-            
+        return False

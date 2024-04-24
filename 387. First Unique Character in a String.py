@@ -1,24 +1,13 @@
 '''
-Runtime: 159 ms, faster than 76.83% of Python3 online submissions 
-Memory Usage: 14.1 MB, less than 58.94% of Python3 online submissions
+Runtime: 69 ms, faster than 94.35% of Python3 online submissions 
+Memory Usage: 16.83 MB, less than 59.20% of Python3 online submissions
 '''
-
 class Solution:
     def firstUniqChar(self, s: str) -> int:
-        ans = []
-        repeat = set()
-        for c in s:
-            if c in repeat:
-                continue
-            else:
-                if c in ans:
-                    ans.remove(c)
-                    repeat.add(c)
-                else:
-                    ans.append(c)
-        if len(ans) == 0:
-            # print("Null")
-            return -1
-        else:
-            # print(ans)
-            return s.find(ans[0])
+        seen = set()
+        for i in range(len(s)):
+            if s[i] not in seen:
+                if s.count(s[i]) == 1:
+                    return i
+                seen.add(s[i])
+        return -1
