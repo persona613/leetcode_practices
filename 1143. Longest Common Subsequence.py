@@ -1,21 +1,17 @@
 """
-1190 ms runtime beats 18.30%
-308.75 MB memory beats 14.10%
+1088 ms runtime beats 16.98%
+309.91 MB memory beats 8.17%
 """
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
-        def dfs(i, j):
-            if (i, j) in memo:
-                return memo[(i, j)]
-            if i == 0 or j == 0:
-                memo[(i, j)] = 0
+
+        @cache
+        def dp(i, j):
+            if i < 0 or j < 0:
                 return 0
-
-            if text1[i-1] == text2[j-1]:
-                memo[(i, j)] = dfs(i-1, j-1) + 1
+            if text1[i] == text2[j]:
+                return 1 + dp(i - 1, j - 1)
             else:
-                memo[(i, j)] = max(dfs(i-1, j), dfs(i, j-1))
-            return memo[(i, j)]
-
-        memo = {}
-        return dfs(len(text1), len(text2))
+                return max(dp(i - 1, j), dp(i, j - 1))
+        
+        return dp(len(text1) - 1, len(text2) - 1)

@@ -1,25 +1,13 @@
 """
-Time Limit Exceed
+543 ms runtime beats 44.42%
+30.94 MB memory beats 64.04%
 """
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
+        n = len(nums)
+        dp = [None] * n
+        dp[0] = nums[0]
+        for i in range(1, n):
+            dp[i] = nums[i] + max(0, dp[i - 1])
 
-        def suml(i, j):
-            nonlocal ans
-
-            if memo[j]:
-                return memo[j]
-            if i > j:
-                return 0
-                
-            memo[j] = suml(i, j-1) + nums[j]
-            if memo[j] > ans:
-                ans = memo[j]
-            return memo[j]
-
-        ans = float("-inf")
-        for i in range(len(nums)):
-            memo = [None] * len(nums)
-            suml(i, len(nums)-1)
-
-        return ans
+        return max(dp)

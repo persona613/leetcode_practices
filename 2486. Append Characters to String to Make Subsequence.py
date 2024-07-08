@@ -1,14 +1,14 @@
 """
-60 ms runtime beats 71.27%
-17.60 MB memory beats 79.56%
+51 ms runtime beats 88.18%
+17.62 MB memory beats 29.07%
 """
 class Solution:
     def appendCharacters(self, s: str, t: str) -> int:
-        m = len(s)
         n = len(t)
-        i = j = 0
-        while i < m and j < n:
-            if s[i] == t[j]:
-                j += 1
-            i += 1
-        return n - j
+        i = 0
+        for c in s:
+            if c == t[i]:
+                i += 1
+                if i >= n:
+                    return 0
+        return n - i

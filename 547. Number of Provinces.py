@@ -1,28 +1,47 @@
 """
-176 ms runtime beats 96.39%
-17.63 MB memory beats 61.45%
+194 ms runtime beats 23.33%
+17.27 MB memory beats 83.94%
 """
 class Solution:
     def findCircleNum(self, isConnected: List[List[int]]) -> int:
-        
-        def dfs(node):
-            for neighbor in g[node]:
-                if neighbor not in seen:
-                    seen.add(neighbor)
-                    dfs(neighbor)
-        
         n = len(isConnected)
-        g = defaultdict(list)
+        uf = UnionFind(n)
         for i in range(n):
-            for j in range(i+1, n):
+            for j in range(n):
                 if isConnected[i][j]:
-                    g[i].append(j)
-                    g[j].append(i)
-        ans = 0
-        seen = set()
+                    uf.union(i, j)
+        p = []
         for i in range(n):
-            if i not in seen:
-                ans += 1
-                seen.add(i)
-                dfs(i)
-        return ans
+            root = uf.find(i)
+            if root not in p:
+                p.append(root)
+        return len(p)
+
+
+class UnionFind:
+    def __init__(self, n):
+        self.root = [i for i in range(n)]
+        self.rank = [1] * n
+    
+    def find(self, x):
+        if self.root[x] != x:
+            self.root[x] = self.find(self.root[x])
+        return self.root[x]
+    
+    def union(self, x, y):
+        rootx = self.find(x)
+        rooty = self.find(y)
+        if rootx != rooty:
+            xr = self.rank[rootx]
+            yr = self.rank[rooty]
+            if xr < yr:
+                self.root[rootx] = rooty
+            elif xr > yr:
+                self.root[rooty] = rootx
+            else:
+                self.root[rooty] = rootx
+                self.rank[rootx] += 1
+
+    def connect(self, x, y):
+        return  self.find(x) == self.find(y)
+

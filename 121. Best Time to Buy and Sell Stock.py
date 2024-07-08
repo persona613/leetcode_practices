@@ -1,17 +1,13 @@
 """
-1059 ms runtime beats 70.68%
-25 MB memory beats 82.89%
+809 ms runtime beats 10.10%
+27.08 MB memory beats 97.68%
 """
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        # daily chanlleng 2023.02.25
-        minday = 0
-        mp = 0
-        for i in range(1, len(prices)):
-            if prices[i] < prices[minday]:
-                minday = i
-            # print("mday", minday)
-            mp = max(mp, prices[i] - prices[minday])
-            # print("mp", mp)
-        return mp
-    
+        n = len(prices)
+        miprice = prices[0]
+        dp = [0] * n
+        for i in range(1, n):
+            dp[i] = max(dp[i - 1], prices[i] - miprice)
+            miprice = min(miprice, prices[i])
+        return dp[-1]

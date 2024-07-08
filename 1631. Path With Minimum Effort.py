@@ -1,42 +1,35 @@
 """
-1609 ms runtime beats 19.51%
-18.81 MB memory beats 43.45%
+1863 ms runtime beats 12.69%
+17.68 MB memory beats 98.09%
 """
 class Solution:
     def minimumEffortPath(self, heights: List[List[int]]) -> int:
 
-        def valid(x, y):
-            if 0 <= x < self.m and 0 <= y < self.n:
-                return True
-            return False
+        def valid(i, j):
+            return 0 <= i < m and 0 <= j < n
 
-        def test(d):
-            stk = [(0, 0)]
-            seen = {(0, 0)}
-            while stk:
-                curr = stk.pop()
-                if curr == (self.m - 1, self.n -1):
-                    return True
-                for dx, dy in dirs:
-                    nx = curr[0] + dx
-                    ny = curr[1] + dy
-                    if valid(nx, ny) and \
-                            (nx, ny) not in seen and \
-                            abs(heights[curr[0]][curr[1]] \
-                            - heights[nx][ny]) <= d:
-                        seen.add((nx, ny))
-                        stk.append((nx, ny))
-            return False
-
-        mi = 0
-        mx = max(max(row) for row in heights)
-        self.m = len(heights)
-        self.n = len(heights[0])
-        dirs = [(1, 0), (-1, 0), (0, 1), (0, -1)]
-        while mi <= mx:
-            mid = (mi + mx) // 2
-            if test(mid):
-                mx = mid - 1
-            else:
-                mi = mid + 1
-        return mi
+        # try SPFA(shortest path faster algorithm), bellman ford + queue
+        m = len(heights)
+        n = len(heights[0])
+        effort = [[float("inf")] * n for _ in range(m)]
+        effort[0][0] = 0
+        inque = [[False] * n for _ in range(m)]
+        inque[0][0] = True
+        q = deque([(0, 0)])
+        dirs = [0, 1, 0, -1, 0]
+        while q:
+            ci, cj = q.popleft()
+            inque[ci][cj] = False
+            curr_h = heights[ci][cj]
+            curr_cost = effort[ci][cj]
+            for d in range(4):
+                ni = ci + dirs[d]
+                nj = cj + dirs[d + 1]
+                if valid(ni, nj):
+                    diff = abs(curr_h - heights[ni][nj])
+                    if max(curr_cost, diff) < effort[ni][nj]:
+                        effort[ni][nj] = max(curr_cost, diff)
+                        if inque[ni][nj] is False:
+                            q.append((ni, nj))
+                            inque[ni][nj] = True
+        return effort[-1][-1]

@@ -1,0 +1,11 @@
+/*
+2236 ms runtime beats 93.85%
+*/
+# Write your MySQL query statement below
+SELECT customer_id, COUNT(customer_id) as 'count_no_trans'
+    FROM Visits
+    WHERE visit_id NOT IN (
+        SELECT visit_id 
+        FROM Transactions
+        )
+    GROUP BY customer_id;

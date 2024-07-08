@@ -1,27 +1,22 @@
 """
-464 ms runtime beats 87.95%
-27.21 MB memory beats 21.60%
+620 ms runtime beats 21.93%
+35.82 MB memory beats 13.43%
 """
 class Solution:
     def longestSubarray(self, nums: List[int], limit: int) -> int:
-        mxq = deque()
-        miq = deque()
+        mxq = []
+        miq = []
         ans = l = 0
         for r in range(len(nums)):
+            heappush(mxq, (-nums[r], r))
+            heappush(miq, (nums[r], r))
 
-            while mxq and nums[mxq[-1]] < nums[r]:
-                mxq.pop()
-            while miq and nums[miq[-1]] > nums[r]:
-                miq.pop()
+            while -mxq[0][0] - miq[0][0] > limit:
+                l = min(mxq[0][1], miq[0][1]) + 1
 
-            mxq.append(r)
-            miq.append(r)
-
-            while nums[mxq[0]] - nums[miq[0]] > limit:
-                if mxq[0] == l:
-                    mxq.popleft()
-                if miq[0] == l:
-                    miq.popleft()
-                l += 1
+                while mxq and mxq[0][1] < l:
+                    heappop(mxq)
+                while miq and miq[0][1] < l:
+                    heappop(miq)
             ans = max(ans, r - l + 1)
         return ans

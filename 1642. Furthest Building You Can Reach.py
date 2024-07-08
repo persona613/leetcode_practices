@@ -1,23 +1,16 @@
 """
-433 ms runtime beats 42.68%
-30.86 MB memory beats 98.58%
+413 ms runtime beats 84.26%
+31.16 MB memory beats 10.59%
 """
 class Solution:
     def furthestBuilding(self, heights: List[int], bricks: int, ladders: int) -> int:
-        if len(heights) == 1: return 0
-        cost = 0
-        h = list()
-        n = len(heights)
-        for i in range(1, n):
-            if heights[i - 1] < heights[i]:
-                diff = heights[i] - heights[i - 1]
-                cost += diff
-                heapq.heappush(h, -diff)
-                if cost > bricks:
-                    if not ladders:
-                        return i - 1
-                    else:
-                        ladders -= 1
-                        cost -= -heapq.heappop(h)
-        return i
-                
+        ladder_used = [] # min-heap
+        for i in range(len(heights) - 1):
+            climb = heights[i + 1] - heights[i]
+            if climb > 0:
+                heapq.heappush(ladder_used, climb)
+            if len(ladder_used) > ladders:
+                bricks -= heapq.heappop(ladder_used)
+            if bricks < 0:
+                return i
+        return len(heights) - 1

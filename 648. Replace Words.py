@@ -1,38 +1,19 @@
 """
-174 ms runtime beats 78.25%
-35.9 MB memory beats 27.99%
+354 ms runtime beats 13.56%
+24.85 MB memory beats 94.66%
 """
-class TrieNode:
-    def __init__(self):
-        self.dict = {}
-        self.end = False
-        
-class Trie:
-    def __init__(self):
-        self.root = TrieNode()
-    def insert(self, word):
-        curr = self.root
-        for c in word:
-            curr = curr.dict.setdefault(c, TrieNode())
-        curr.end = True
-    def replace(self, successor):
-        curr = self.root
-        root = ""
-        for c in successor:
-            if c not in curr.dict:
-                return
-            curr = curr.dict[c]
-            root += c
-            if curr.end:
-                return root
-
 class Solution:
     def replaceWords(self, dictionary: List[str], sentence: str) -> str:
-        tree = Trie()
-        for root in dictionary:
-            tree.insert(root)
-        words = sentence.split(" ")
-        for i, word in enumerate(words):
-            if rt := tree.replace(word):
-                words[i] = rt
-        return " ".join(words)
+
+        def root(word):
+            for i in range(1, len(word)):
+                prefix = word[:i]
+                if prefix in dic:
+                    return prefix
+            return word
+
+        dic = set(dictionary)
+        arr = sentence.split()
+        for i in range(len(arr)):
+            arr[i] = root(arr[i])
+        return " ".join(arr)

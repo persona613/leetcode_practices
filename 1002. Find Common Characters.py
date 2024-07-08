@@ -1,11 +1,13 @@
 """
-51 ms runtime beats 91.12%
-16.5 MB memory beats 47.50%
+47 ms runtime beats 70.15%
+16.55 MB memory beats 93.72%
 """
 class Solution:
     def commonChars(self, words: List[str]) -> List[str]:
-        dic = Counter(words[0])
-        for i in range(1, len(words)):
-            mi = Counter(words[i])
-            dic = { k:min(dic[k], mi[k]) for k in set(dic)&set(mi)}
-        return [ k for k, v in dic.items() for i in range(v)]
+        if len(words) == 1: return words[0]
+        chars = set(words[0])
+        res = []
+        for char in chars:
+            freq = min([word.count(char) for word in words])
+            res += freq * [char]
+        return res

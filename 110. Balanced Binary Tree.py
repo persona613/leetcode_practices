@@ -1,6 +1,6 @@
 """
-49 ms runtime beats 89.10%
-18.6 MB memory beats 58.89%
+53 ms runtime beats 17.86%
+17.74 MB memory beats 16.85%
 """
 # Definition for a binary tree node.
 # class TreeNode:
@@ -10,18 +10,16 @@
 #         self.right = right
 class Solution:
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
-        
-        def h(root):
+
+        def height(root):
             if not root:
-                return -1
-            left = h(root.left)
-            right = h(root.right)
+                return True, 0
+            
+            lbool, lh = height(root.left)
+            rbool, rh = height(root.right)
+            if lbool and rbool:
+                return abs(lh - rh) <= 1, max(lh, rh) + 1
+            return False, max(lh, rh) + 1
 
-            if left == None or right == None:
-                return 
-            if abs(left-right) > 1:
-                return 
-            return max(left, right) + 1        
-
-        return h(root) != None
+        return height(root)[0]            
             

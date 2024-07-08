@@ -1,29 +1,27 @@
 """
-475 ms runtime beats 40.24%
-35.14 MB memory beats 65.97%
+469 ms runtime beats 49.08%
+34.52 MB memory beats 79.09%
 """
 class Solution:
     def partition(self, s: str) -> List[List[str]]:
 
-        def backtrack(i, curr, path):
+        def pal(word):
+            return word == word[::-1]
+
+        def backtrack(i, path):
             if i == n:
                 res.append(path[:])
                 return
-
-            curr.append(s[i])
-            if pal(curr):
-                path.append("".join(curr))
-                backtrack(i + 1, [], path)
-                path.pop()
-
-            if i == n - 1:
-                return
-            backtrack(i + 1, curr, path)
-
-        def pal(arr):
-            return arr == arr[::-1]
+            
+            # cut string to each j
+            for j in range(i + 1, n + 1):
+                curr = s[i: j]
+                if pal(curr):
+                    path.append(curr)
+                    backtrack(j, path)
+                    path.pop()
 
         n = len(s)
         res = []
-        backtrack(0, [], [])
+        backtrack(0, [])
         return res

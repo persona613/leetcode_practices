@@ -1,15 +1,16 @@
 """
-57 ms runtime beats 82.04%
-16.57 MB memory beats 74.82%
+52 ms runtime beats 86.37%
+16.96 MB memory beats 11.97%
 """
 class Solution:
     def minCost(self, costs: List[List[int]]) -> int:
-        for i in range(1, len(costs)):
-            for j in range(3):
-                if j == 0:
-                    costs[i][j] += min(costs[i-1][1], costs[i-1][2])
-                elif j == 1:
-                    costs[i][j] += min(costs[i-1][0], costs[i-1][2])
-                else:
-                    costs[i][j] += min(costs[i-1][0], costs[i-1][1])
-        return min(costs[-1])
+
+        @lru_cache(None)
+        def dp(i, j):
+            if i < 0:
+                return 0            
+            return costs[i][j] + min(dp(i - 1, (j + 1) % 3),
+                                     dp(i - 1, (j + 2) % 3))
+                                     
+        i = len(costs) - 1
+        return min(dp(i, 0), dp(i, 1), dp(i, 2))

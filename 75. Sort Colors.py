@@ -1,30 +1,24 @@
 """
-63 ms runtime beats 48.21%
-14 MB memory beats 15.27%
+40 ms runtime beats 36.00%
+16.47 MB memory beats 79.02%
 """
 class Solution:
     def sortColors(self, nums: List[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.
         """
-        counts = [0]*(2+1)
-        for n in nums:
-            counts[n] += 1
-            
-        # starting indices
-        sums = 0
-        for i, c in enumerate(counts):
-            counts[i] = sums
-            sums += c
-            
-        # new list init
-        new = [0]*len(nums)
-        for n in nums:
-            new[counts[n]] = n
-            counts[n] += 1
-            
-        # rewrite nums
-        for i in range(len(nums)):
-            nums[i] = new[i]
-        # print(nums)
+        # l = red index, r = blue index
+        l = i = 0
+        r = len(nums) - 1
+        while i <= r:
+            curr = nums[i]
+            if curr == 0:
+                nums[l], nums[i] = nums[i], nums[l]
+                l += 1
+                i += 1
+            elif curr == 2:
+                nums[i], nums[r] = nums[r], nums[i]
+                r -= 1
+            else:
+                i += 1
         

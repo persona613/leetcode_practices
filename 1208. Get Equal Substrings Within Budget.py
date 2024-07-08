@@ -1,6 +1,6 @@
 """
-60 ms runtime beats 98.55%
-17.99 MB memory beats 18.46%
+54 ms runtime beats 92.58%
+18.13 MB memory beats 12.36%
 """    
 class Solution:
     def equalSubstring(self, s: str, t: str, maxCost: int) -> int:
@@ -11,11 +11,9 @@ class Solution:
             cts.append(d)
 
         l = cost = ans = 0
-        for r in range(len(s)):
+        for r in range(n):
             cost += cts[r]
-            while cost > maxCost:
+            if cost > maxCost:
                 cost -= cts[l]
                 l += 1
-            if r - l + 1 > ans:
-                ans = r - l + 1
-        return ans
+        return r - l + 1

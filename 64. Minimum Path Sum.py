@@ -1,25 +1,22 @@
 """
-120 ms runtime beats 31.1%
-16.1 MB memory beats 21.52%
+94 ms runtime beats 20.03%
+18.20 MB memory beats 88.07%
 """
 class Solution:
     def minPathSum(self, grid: List[List[int]]) -> int:
-
-        def pos(i, j):
-            if memo[i][j]:
-                return memo[i][j]
-            if i == 0 and j == 0:
-                memo[i][j] = grid[i][j]
-                return memo[i][j]
-
-            if i-1 < 0:
-                memo[i][j] = pos(i, j-1) + grid[i][j]
-            elif j-1 < 0:
-                memo[i][j] = pos(i-1, j) + grid[i][j]
-            else:
-                memo[i][j] = min(pos(i-1, j), pos(i, j-1)) + grid[i][j]
-            return memo[i][j]
-        
-        memo = [[None for _ in range(len(grid[0]))] for _ in range(len(grid))]
-        ans = pos(len(grid)-1, len(grid[0])-1)
-        return ans
+        m = len(grid)
+        n = len(grid[0])
+        dp = [[None] * n for _ in range(m)]
+        dp[0][0] = grid[0][0]
+        for i in range(m):
+            for j in range(n):
+                curr = grid[i][j]
+                left = up = float("inf")
+                if i + j == 0:
+                    continue
+                if i != 0:
+                    up = dp[i - 1][j]
+                if j != 0:
+                    left = dp[i][j - 1]
+                dp[i][j] = min(left, up) + curr
+        return dp[-1][-1]

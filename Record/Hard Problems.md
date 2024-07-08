@@ -5,18 +5,63 @@
 ---2022.12.17---\
 4. Median of Two Sorted Arrays\
 ---2022.12.24---\
-164. Maximum Gap
+164. Maximum Gap\
+---2024.04.27---\
+719. Find K-th Smallest Pair Distance
 
 **[ Trie ]**\
 ---2023.01.08---\
-336. Palindrome Pairs
+336. Palindrome Pairs\
+---2024.04.30---\
+642. Design Search Autocomplete System (premium)\
+---2024.05.01---\
+212. Word Search II\
+425. Word Squares (premium)\
+---2024.05.02---\
+428. Serialize and Deserialize N-ary Tree (premium)\
+431. Encode N-ary Tree to Binary Tree (premium)
 
 **[ Recursion II ]**\
 ---2023.01.12---\
 52. N-Queens II\
-37. Sudoku Solver
+37. Sudoku Solver\
+---2024.04.29---\
+489. Robot Room Cleaner (premium)\
+84. Largest Rectangle in Histogram (duplicate)\
+---2024.04.30---\
+218. The Skyline Problem
 
-**[ SQL 50 ]**\
+**[ Binary Tree ]**\
+---2024.04.29---\
+297. Serialize and Deserialize Binary Tree
+
+**[ Heap ]**\
+---2024.04.28---\
+295. Find Median from Data Stream (duplicate for complete Heap)
+
+**[ Binary Search Tree ]**\
+---2024.05.04---\
+220. Contains Duplicate III
+
+**[ Dynamic Programming ]**\
+---2024.05.05---\
+1770. Maximum Score from Performing Multiplication Operations\
+---2024.05.06---\
+1335. Minimum Difficulty of a Job Schedule (duplicate)\
+---2024.05.09---\
+265. Paint House II (premium)\
+1473. Paint House III\
+1220. Count Vowels Permutation (duplicate)
+
+**[ Graph ]**\
+---2024.05.13---\
+1168. Optimize Water Distribution in a Village (premium)
+---2024.05.14---\
+332. Reconstruct Itinerary\
+---2024.05.20---\
+269. Alien Dictionary (premium)
+
+**[ Study Plan: SQL 50 ]**\
 ---2023.11.05---\
 185. Department Top Three Salaries
 
@@ -45,6 +90,7 @@
 480. Sliding Window Median
 
 --- Greedy ---\
+---2024.03.19---\
 502. IPO\
 ---2024.03.21---\
 2136. Earliest Possible Day of Full Bloom\
@@ -68,7 +114,13 @@
 ---2024.04.06---\
 188. Best Time to Buy and Sell Stock IV\
 ---2024.04.24---\
-2218. Maximum Value of K Coins From Piles
+2218. Maximum Value of K Coins From Piles\
+---2024.06.16---\
+1406. Stone Game III
+
+**[ Bit Manipulation ]**\
+---2024.05.28---\
+1349. Maximum Students Taking Exam
 
 **[ Daily LeetCoding Challenge ]**\
 ---2022.10.10---\
@@ -134,10 +186,33 @@
 2444. Count Subarrays With Fixed Bounds\
 ---2024.04.13---\
 42. Trapping Rain Water\
-84. Largest Rectangle in Histogram (help probelm 85.)\
+84. Largest Rectangle in Histogram (help 85.)\
 85. Maximal Rectangle\
 ---2024.04.23---\
 305. Number of Islands II (premium)
+---2024.04.27---\
+1289. Minimum Falling Path Sum II\
+514. Freedom Trail\
+---2024.04.28---\
+834. Sum of Distances in Tree\
+---2024.05.11---\
+857. Minimum Cost to Hire K Workers\
+---2024.05.20---\
+3068. Find the Maximum Sum of Node Values\
+---2024.05.24---\
+1255. Maximum Score Words Formed by Letters\
+---2024.05.25---\
+140. Word Break II\
+---2024.05.27---\
+552. Student Attendance Record II\
+---2024.06.15---\
+502. IPO (pass)\
+---2024.06.16---\
+330. Patching Array\
+---2024.06.24---\
+995. Minimum Number of K Consecutive Bit Flips\
+---2024.06.30---\
+1579. Remove Max Number of Edges to Keep Graph Fully Traversable
 
 **[ Others ]**
 

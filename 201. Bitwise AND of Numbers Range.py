@@ -1,9 +1,13 @@
 """
-49 ms runtime beats 73.30%
-16.45 MB memory beats 98.92%
+60 ms runtime beats 21.44%
+16.47 MB memory beats 97.37%
 """
 class Solution:
     def rangeBitwiseAnd(self, left: int, right: int) -> int:
-        while left < right:
-            right = right & (right - 1)
-        return right
+        shift = 0
+        # find common prefix
+        while left != right:
+            left >>= 1
+            right >>= 1
+            shift += 1
+        return left << shift

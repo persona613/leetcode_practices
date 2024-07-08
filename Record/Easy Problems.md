@@ -1,4 +1,3 @@
-## **Pass**
 ## **[ Easy Level ]**
 **[ Python Basic Class by Lin ]**\
 ---2022.05.02---\
@@ -98,7 +97,10 @@
 350. Intersection of Two Arrays II\
 219. Contains Duplicate II\
 ---2022.11.22---\
-771. Jewels and Stones
+771. Jewels and Stones\
+---2024.04.25---\
+359. Logger Rate Limiter (premium) \
+170. Two Sum III - Data structure design (premium)
 
 **[ Queue & Stack ]**\
 ---2022.11.27---\
@@ -166,9 +168,67 @@
 
 **[ Binary Search Tree ]**\
 ---2023.01.20---\
-110. Balanced Binary Tree
+110. Balanced Binary Tree\
+---2024.05.04---\
+110. Balanced Binary Tree (duplicate)\
+108. Convert Sorted Array to Binary Search Tree
 
-**[ Top 100 Liked Questions ]**\
+**[ Heap ]**\
+---2024.04.28---\
+1046. Last Stone Weight (deuplicate)\
+1337. The K Weakest Rows in a Matrix (duplicate)
+
+**[ Dynamic Programming ]**\
+---2024.05.04---\
+1137. N-th Tribonacci Number (duplicate)\
+---2024.05.08---\
+121. Best Time to Buy and Sell Stock (duplicate)
+
+**[ Bit Manipulation ]**\
+---2024.05.23---\
+504. Base 7 (duplicate)\
+405. Convert a Number to Hexadecimal\
+191. Number of 1 Bits (duplicate)\
+---2024.05.24---\
+190. Reverse Bits\
+---2024.05.25---\
+338. Counting Bits
+
+**[ SQL Language ]**\
+---2024.05.28---\
+595. Big Countries (pass)\
+1757. Recyclable and Low Fat Products (pass)\
+584. Find Customer Referee (pass)\
+1873. Calculate Special Bonus\
+627. Swap Salary\
+1148. Article Views I (pass)\
+1693. Daily Leads and Partners\
+1729. Find Followers Count (pass)\
+511. Game Play Analysis I\
+182. Duplicate Emails\
+1050. Actors and Directors Who Cooperated At Least Three Times\
+1581. Customer Who Visited but Did Not Make Any Transactions (duplicate)\
+175. Combine Two Tables (pass)\
+183. Customers Who Never Order\
+586. Customer Placing the Largest Number of Orders\
+1407. Top Travellers\
+1965. Employees With Missing Information
+
+**[ System Design ]**\
+---2024.06.03---\
+None. Design Log Aggregation System (no add solved number)\
+None. Design a Rate Limiting System (no add solved number)\
+---2024.06.06---\
+None. Design Whatsapp\
+None. Design Facebook\
+None. Design a Dating System
+
+**[ Decision Tree ]**\
+---2024.06.10---\
+None. Calculate Entropy\
+None. Calculate Maximum Information Gain
+
+**[ Study Plan: Top 100 Liked Questions ]**\
 ---2023.01.21---\
 169. Majority Element\
 ---2023.01.22---\
@@ -177,7 +237,7 @@
 [Daily LeetCoding Challenge 2023.02.26]\
 121. Best Time to Buy and Sell Stock 
 
-**[ SQL 50 ]**\
+**[ Study Plan: SQL 50 ]**\
 ---2023.10.13---\
 1757. Recyclable and Low Fat Products
 ---2023.10.14---\
@@ -311,6 +371,65 @@
 --- Dynamic programming ---\
 ---2024.03.28---\
 746. Min Cost Climbing Stairs (duplicate)
+
+--- Bit manipulation ---\
+---2024.06.14---\
+461. Hamming Distance * 2
+
+--- Intervals ---\
+---2024.06.14---\
+252. Meeting Rooms (premium)
+
+**[ Study Plan: Introduction to Pandas ]**\
+---2024.06.25---\
+2877. Create a DataFrame from List\
+---2024.06.26---\
+2878. Get the Size of a DataFrame\
+2879. Display the First Three Rows\
+2880. Select Data * 2\
+2881. Create a New Column\
+---2024.06.27---\
+2882. Drop Duplicate Rows\
+2883. Drop Missing Data\
+2884. Modify Columns\
+2885. Rename Columns\
+---2024.06.28---\
+2886. Change Data Type\
+2887. Fill Missing Data\
+2888. Reshape Data: Concatenate\
+2889. Reshape Data: Pivot\
+2890. Reshape Data: Melt\
+2891. Method Chaining
+
+**[ Study Plan: 30 Days of Pandas ]**\
+---2024.06.28---\
+595. Big Countries (duplicate)\
+1757. Recyclable and Low Fat Products (duplicate)\
+183. Customers Who Never Order (duplicate)\
+1148. Article Views I (duplicate)\
+1683. Invalid Tweets (duplicate)\
+1873. Calculate Special Bonus (duplicate)\
+1667. Fix Names in a Table (duplicate)\
+1517. Find Users With Valid E-Mails (duplicate)\
+1527. Patients With a Condition (duplicate)\
+---2024.06.30---\
+196. Delete Duplicate Emails (duplicate)\
+1795. Rearrange Products Table\
+---2024.07.01---\
+2082. The Number of Rich Customers (premium)\
+1173. Immediate Food Delivery I (premium)\
+1322. Ads Performance (premium)\
+1741. Find Total Time Spent by Each Employee\
+511. Game Play Analysis I (duplicate)\
+2356. Number of Unique Subjects Taught by Each Teacher (duplcate)\
+596. Classes More Than 5 Students (duplicate)\
+586. Customer Placing the Largest Number of Orders (duplcate)\
+1484. Group Sold Products By The Date (duplicate)\
+1693. Daily Leads and Partners (duplicate)\
+1050. Actors and Directors Who Cooperated At Least Three Times (duplicate)\
+1378. Replace Employee ID With The Unique Identifier (duplicate)\
+1280. Students and Examinations (duplicate)\
+607. Sales Person (duplicate)
 
 **[ Daily LeetCoding Challenge ]**\
 ---2023.09.22---\
@@ -459,7 +578,45 @@
 ---2024.04.18---\
 463. Island Perimeter\
 ---2024.04.24---\
-1137. N-th Tribonacci Number
+1137. N-th Tribonacci Number\
+---2024.05.01---\
+2000. Reverse Prefix of Word (pass)\
+---2024.05.02---\
+2441. Largest Positive Integer That Exists With Its Negative\
+---2024.05.08---\
+506. Relative Ranks\
+---2024.05.12---\
+2373. Largest Local Values in a Matrix\
+---2024.05.16---\
+2331. Evaluate Boolean Binary Tree\
+---2024.05.20---\
+1863. Sum of All Subset XOR Totals\
+---2024.05.27---\
+1608. Special Array With X Elements Greater Than or Equal X\
+---2024.06.01---\
+3110. Score of a String\
+---2024.06.02---\
+344. Reverse String (duplicate)
+---2024.06.04---\
+409. Longest Palindrome (pass)\
+---2024.06.05---\
+1002. Find Common Characters (duplicate)\
+---2024.06.10---\
+1051. Height Checker (pass)\
+---2024.06.11---\
+1122. Relative Sort Array (pass)\
+---2024.06.13---\
+2037. Minimum Number of Moves to Seat Everyone\
+---2024.06.27---\
+1791. Find Center of Star Graph\
+---2024.07.01---\
+1550. Three Consecutive Odds\
+---2024.07.02---\
+350. Intersection of Two Arrays II (duplicate)\
+---2024.07.06---\
+2582. Pass the Pillow\
+---2024.07.07---\
+1518. Water Bottles
 
 **[ Others ]**\
 ---2022.09.04---\
@@ -789,7 +946,13 @@
 ---2023.11.24---\
 1491. Average Salary Excluding the Minimum and Maximum Salary\
 ---2023.11.25---\
-1496. Path Crossing
+1496. Path Crossing\
+---2024.05.27---\
+1502. Can Make Arithmetic Progression From Sequence\
+---2024.06.10---\
+459. Repeated Substring Pattern\
+---2024.07.06---\
+3178. Find the Child Who Has the Ball After K Seconds (same 2582.)
 
 
 

@@ -1,19 +1,24 @@
 """
-126 ms runtime beats 90.65%
-17.46 MB memory beats 53.53%
+86 ms runtime beats 96.10%
+18.52 MB memory beats 47.65%
 """
 class Solution:
     def numRollsToTarget(self, n: int, k: int, target: int) -> int:
+
+        # i=number of dices(1-index)
+        @lru_cache(None)
+        def dp(i, cursum):
+            if cursum < i or cursum > i * k:
+                return 0
+            if i == 1 or i * k == cursum:
+                return 1
+            
+            cnt = 0
+            for t in range(1, k + 1):
+                if cursum - t <= 0:
+                    break
+                cnt += dp(i - 1, cursum - t) % mod
+            return cnt % mod
+
         mod = 10 ** 9 + 7
-        col = max(k + 1, target + 1)
-        prev = [0] * col
-        dp = prev.copy()
-        # init
-        for t in range(1, k + 1):
-            prev[t] = 1
-        for i in range(n - 1):
-            for t in range(1, target + 1):
-                start = max(0, t - k)
-                dp[t] = sum(prev[start:t]) % mod
-            prev, dp = dp, prev
-        return prev[target]
+        return dp(n, target) % mod

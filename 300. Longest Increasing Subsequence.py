@@ -1,14 +1,16 @@
 """
-53 ms runtime beats 97.46%
-17.72 MB memory beats 14.10%
+761 ms runtime beats 76.77%
+16.92 MB memory beats 44.20%
 """
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
-        res = []
-        for v in nums:
-            i = bisect_left(res, v)
-            if i == len(res):
-                res.append(v)
-            elif v < res[i]:
-                res[i] = v
-        return len(res)
+        n = len(nums)
+        dp = []
+        for i in range(n):
+            a = nums[i]
+            length = 0
+            for j in range(i):
+                if nums[j] < a and dp[j] > length:
+                    length = dp[j]
+            dp.append(length + 1)
+        return max(dp)
