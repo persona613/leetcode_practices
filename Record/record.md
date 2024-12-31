@@ -25,4 +25,6 @@ Solved Problems : 937\
 2024.07.07\
 Solved Problems : 954\
 2024.07.08\
-Solved Problems : 957
+Solved Problems : 957\
+2024.12.31\
+Solved Problems : 1192

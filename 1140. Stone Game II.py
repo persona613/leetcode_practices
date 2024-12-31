@@ -1,34 +1,31 @@
 """
-502 ms runtime beats 39.07%
-20.84 MB memory beats 7.28%
+147 ms runtime beats 88.78%
+18.20 MB memory beats 67.75%
 """
 class Solution:
     def stoneGameII(self, piles: List[int]) -> int:
-        # dp(i, m) = Alice score
-        # m > 0: Alice turn, take Max
-        # m < 0: Bob turn, take Min
+        # dp(i, m) = Curr-Player gain max
         @lru_cache(None)
         def dp(i, m):
             if i >= n:
                 return 0
 
-            # take at most: i + 2 * m
-            right = min(i + 2 * abs(m), n)
+            # can take all piles
+            if i + 2 * m >= n:
+                return suffix_sum[i]
+            
+            # find opponent's mini gain
+            opp = float("inf")
+            for x in range(1, 2 * m + 1):
+                gain = dp(i + x, max(m, x))
+                opp = min(opp, gain)
 
-            if m < 0:
-                min_score = float("inf")
-                for j in range(i, right):
-                    score = dp(j + 1, max(abs(m), j - i + 1))
-                    min_score = min(min_score, score)
-                return min_score
-            else:
-                max_score = curr_score = 0
-                for j in range(i, right):
-                    curr_score += piles[j]
-                    score = curr_score + \
-                            dp(j + 1, -1 * max(m, j - i + 1))
-                    max_score = max(max_score, score)
-                return max_score
+            # curr max = max(all_stones - opponent's gain)
+            # = all_stones - min(opponent's gain)
+            return suffix_sum[i] - opp
 
         n = len(piles)
+        suffix_sum = piles[:]
+        for i in range(n - 2, -1, -1):
+            suffix_sum[i] += suffix_sum[i + 1]
         return dp(0, 1)

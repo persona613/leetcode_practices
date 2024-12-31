@@ -1,25 +1,21 @@
 '''
-Runtime: 1099 ms, faster than 18.74% of Python3 online submissions
-Memory Usage: 14.3 MB, less than 76.32% of Python3 online submissions
+Runtime: 145 ms, faster than 67.84% of Python3 online submissions
+Memory Usage: 43.91 MB, less than 10.36% of Python3 online submissions
 '''
-
 class Solution:
     def findTargetSumWays(self, nums: List[int], target: int) -> int:
-        total = sum(nums)
-        memo = [[-1 for s in range(total*2+1)] for i in range(len(nums))]
-
-        def calculate(nums, i, sums, t, memo):
+        
+        # index, curr sum
+        @lru_cache(None)
+        def dfs(i, csum):
             if i == len(nums):
-                if sums == t:
-                    return 1
-                else:
-                    return 0
-            else:
-                if memo[i][sums] != -1:
-                    return memo[i][sums]
-                add = calculate(nums, i+1, sums+nums[i], t, memo)
-                minus = calculate(nums, i+1, sums-nums[i], t, memo)
-                memo[i][sums] = add+minus
-                return memo[i][sums]
-            
-        return calculate(nums, 0, 0, target, memo) 
+                return 1 if csum == target else 0
+
+            add = dfs(i + 1, csum + nums[i])
+            neg = dfs(i + 1, csum - nums[i])
+            return add + neg
+
+        self.total_sum = sum(nums)
+        if abs(target) > self.total_sum:
+            return 0
+        return dfs(0, 0)

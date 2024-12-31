@@ -1,25 +1,30 @@
 """
-37 ms runtime beats 91.02%
-17.78 MB memory beats 8.46%
+0 ms runtime beats 100.00%
+17.87 MB memory beats 22.32%
 """
 class Solution:
     def mincostTickets(self, days: List[int], costs: List[int]) -> int:
+        maxday = days[-1]
+        # is_travel_days
+        tdays = [False] * (maxday + 1)
+        for d in days:
+            tdays[d] = True
 
-        @lru_cache(None)
-        def dp(i):
-            if i > maxday:
-                return 0
-            if i not in tdays:
-                return dp(i + 1)
-            
-            micost = float("inf")
-            for k in range(3):
-                cost = costs[k] + dp(i + passes[k])
-                if cost < micost:
-                    micost = cost
-            return micost
-
-        maxday = max(days)
-        tdays = set(days)
-        passes = [1, 7, 30]
-        return dp(0)
+        dp = [0] * (maxday + 1)
+        for i in range(1, maxday + 1):
+            if tdays[i]:
+                # buy 1-day pass
+                cost1 = dp[i - 1] + costs[0]
+                if i >= 7:
+                    cost2 = dp[i - 7] + costs[1]
+                else:
+                    cost2 = costs[1]
+                if i >= 30:
+                    cost3 = dp[i - 30] + costs[2]
+                else:
+                    cost3 = costs[2]
+                dp[i] = min(min(cost1, cost2), cost3)
+            else:
+                dp[i] = dp[i - 1]
+        return dp[-1]
+        

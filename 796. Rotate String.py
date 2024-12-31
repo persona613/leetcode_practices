@@ -1,13 +1,7 @@
 """
-48 ms runtime beats 44.18%
-16.3 MB memory beats 70.27%
+0 ms runtime beats 100.00%
+16.54 MB memory beats 40.35%
 """
 class Solution:
     def rotateString(self, s: str, goal: str) -> bool:
-        cnt = s.count(goal[0])
-        t = -1
-        for _ in range(cnt):
-            t = s.find(goal[0], t+1)
-            if s[t:] + s[:t] == goal:
-                return True
-        return False
+        return len(s) <= len(goal) and goal in s + s

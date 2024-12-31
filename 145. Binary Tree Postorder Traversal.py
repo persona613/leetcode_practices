@@ -1,6 +1,6 @@
 """
-29 ms runtime beats 94.43%
-13.7 MB memory beats 96.86%
+40 ms runtime beats 20.33%
+16.58 MB memory beats 20.02%
 """
 # Definition for a binary tree node.
 # class TreeNode:
@@ -10,13 +10,19 @@
 #         self.right = right
 class Solution:
     def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        if not root: return
         res = []
-        def dfs(node, res):
-            if not node:
-                return res
-            res = dfs(node.left, res)
-            res = dfs(node.right, res)
-            res.append(node.val) 
-            return res
-            
-        return dfs(root, res)
+        stk = [root]
+        seen = set()
+        while stk:
+            curr = stk.pop()
+            if curr not in seen:
+                seen.add(curr)
+                stk.append(curr)
+                if curr.right:
+                    stk.append(curr.right)
+                if curr.left:
+                    stk.append(curr.left)
+            else:
+                res.append(curr.val)
+        return res

@@ -635,7 +635,179 @@ None. Design Uber\
 1055. Shortest Way to Form String (premium)
 
 --- Sliding Window ---\
----2024.07.07---\
+---2024.07.09---\
+1100. Find K-Length Substrings With No Repeated Characters (premium)
+
+--- Hashing ---\
+---2024.07.11---\
+1198. Find Smallest Common Element in All Rows (premium)
+
+--- Matrix ---\
+---2024.07.11---\
+531. Lonely Pixel I (premium)\
+311. Sparse Matrix Multiplication (premium)\
+---2024.07.26---\
+723. Candy Crush (premium)
+
+--- Intervals ---\
+---2024.07.28---\
+616. Add Bold Tag in String (premium)
+
+--- Stack ---\
+---2024.07.29---\
+439. Ternary Expression Parser (premium)\
+---2024.07.30---\
+484. Find Permutation (premium)
+
+--- Queue ---\
+---2024.07.31---\
+1429. First Unique Number (premium)
+
+--- Linked Lists ---\
+---2024.07.31---\
+369. Plus One Linked List (premium)\
+---2024.08.01---\
+1265. Print Immutable Linked List in Reverse (premium)
+
+--- Binary Tree - General ---\
+---2024.08.01---\
+298. Binary Tree Longest Consecutive Sequence (premium)\
+---2024.08.02---\
+549. Binary Tree Longest Consecutive Sequence II (premium)\
+545. Boundary of Binary Tree (premium)\
+366. Find Leaves of Binary Tree (premium)\
+314. Binary Tree Vertical Order Traversal (premium)
+
+--- Binary Search Tree ---\
+---2024.08.05---\
+1214. Two Sum BSTs (premium)\
+---2024.08.06---\
+333. Largest BST Subtree (premium)
+
+--- N-ary Tree ---\
+---2024.08.22---\
+1490. Clone N-ary Tree (premium)\
+---2024.08.31---\
+1506. Find Root of N-Ary Tree (premium)\
+---2024.09.01---\
+1522. Diameter of N-Ary Tree (premium)
+
+--- Graph - General ---\
+---2024.09.03---\
+582. Kill Process (premium)\
+1236. Web Crawler (premium)\
+---2024.09.10---\
+694. Number of Distinct Islands (premium)
+
+--- Graph - BFS ---\
+---2024.09.10---\
+490. The Maze (premium)\
+---2024.09.11---\
+505. The Maze II (premium)\
+1197. Minimum Knight Moves (premium)
+
+--- Binary Search ---\
+---2024.09.11---\
+1060. Missing Element in Sorted Array (premium)
+
+--- Design ---\
+---2024.09.12---\
+353. Design Snake Game (premium)\
+271. Encode and Decode Strings (premium)\
+281. Zigzag Iterator (premium)
+
+--- Backtracking ---\
+---2024.09.12---\
+247. Strobogrammatic Number II (premium)\
+---2024.09.13---\
+254. Factor Combinations (premium)
+
+--- Dynamic Programming ---\
+---2024.09.14---\
+651. 4 Keys Keyboard (premium)
+
+--- Math ---\
+---2024.09.15---\
+1538. Guess the Majority in a Hidden Array (premium)
+
+**[ Study Plan: Programming Skills ]**\
+--- Simulation ---\
+---2024.09.17---\
+1041. Robot Bounded In Circle
+
+--- Math ---\
+---2024.09.18---\
+43. Multiply Strings
+
+--- Linked List ---\
+---2024.09.18---\
+445. Add Two Numbers II
+
+--- Design ---\
+---2024.09.19---\
+1396. Design Underground System\
+1472. Design Browser History
+
+--- Tricky Implementation ---\
+---2024.09.19---\
+8. String to Integer (atoi)
+
+**[ Study Plan: Apple Spring '23 High Frequency ]**\
+--- March Interview Questions ---\
+---2024.09.25---\
+2439. Minimize Maximum of Array
+
+**[ Study Plan: Dynamic Programming ]**\
+--- On Strings ---\
+---2024.09.25---\
+516. Longest Palindromic Subsequence\
+712. Minimum ASCII Delete Sum for Two Strings
+
+--- Longest Increasing Subsequence ---\
+---2024.10.06---\
+673. Number of Longest Increasing Subsequence\
+646. Maximum Length of Pair Chain
+
+--- On Trees ---\
+---2024.10.06---\
+96. Unique Binary Search Trees
+
+--- Knapsack ---\
+---2024.10.05---\
+377. Combination Sum IV
+
+--- General 1D ---\
+---2024.10.05---\
+2466. Count Ways To Build Good Strings
+
+**[ Study Plan: Graph Theory ]**\
+--- Standard Traversal ---\
+---2024.10.07---\
+802. Find Eventual Safe States
+
+--- BFS ---\
+---2024.10.07---\
+934. Shortest Bridge
+
+--- Matrix Graphs ---\
+---2024.10.07---\
+1254. Number of Closed Islands\
+---2024.10.08---\
+417. Pacific Atlantic Water Flow
+
+--- Graph Theory ---\
+---2024.10.08---\
+785. Is Graph Bipartite?
+
+--- Union Find / DSU ---\
+---2024.10.09---\
+721. Accounts Merge\
+---2024.10.13---\
+1061. Lexicographically Smallest Equivalent String
+
+--- Minimum Spanning Tree ---\
+---2024.10.13---\
+1135. Connecting Cities With Minimum Cost (premium)
 
 
 **[ Daily LeetCoding Challenge ]**\
@@ -995,7 +1167,271 @@ None. Design Uber\
 2058. Find the Minimum and Maximum Number of Nodes Between Critical Points\
 ---2024.07.08---\
 1823. Find the Winner of the Circular Game\
-1836. Remove Duplicates From an Unsorted Linked List (premium)
+1836. Remove Duplicates From an Unsorted Linked List (premium)\
+---2024.07.09---\
+1701. Average Waiting Time\
+---2024.07.11---\
+1190. Reverse Substrings Between Each Pair of Parentheses\
+---2024.07.12---\
+1717. Maximum Score From Removing Substrings\
+---2024.07.15---\
+2196. Create Binary Tree From Descriptions\
+---2024.07.16---\
+2096. Step-By-Step Directions From a Binary Tree Node to Another\
+1740. Find Distance in a Binary Tree (premium)\
+---2024.07.17---\
+1110. Delete Nodes And Return Forest\
+---2024.07.18---\
+1530. Number of Good Leaf Nodes Pairs\
+---2024.07.20---\
+1605. Find Valid Matrix Given Row and Column Sums\
+2093. Minimum Cost to Reach City With Discounts (premium)\
+---2024.07.24---\
+2191. Sort the Jumbled Numbers\
+---2024.07.25---\
+912. Sort an Array (duplicate)\
+---2024.07.26---\
+1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance\
+---2024.07.27---\
+2976. Minimum Cost to Convert String I\
+---2024.07.29---\
+1395. Count Number of Teams\
+1230. Toss Strange Coins (premium)\
+---2024.07.30---\
+1653. Minimum Deletions to Make String Balanced\
+---2024.07.31---\
+1105. Filling Bookcase Shelves\
+---2024.08.01---\
+1062. Longest Repeating Substring (premium)\
+---2024.08.02---\
+2134. Minimum Swaps to Group All 1's Together II\
+---2024.08.04---\
+1508. Range Sum of Sorted Subarray Sums\
+---2024.08.06---\
+3016. Minimum Number of Pushes to Type Word II\
+---2024.08.08---\
+885. Spiral Matrix III\
+---2024.08.09---\
+840. Magic Squares In Grid\
+---2024.08.10---\
+959. Regions Cut By Slashes\
+---2024.08.12---\
+351. Android Unlock Patterns (premium)\
+---2024.08.13---\
+40. Combination Sum II (duplicate)\
+---2024.08.16---\
+3189. Minimum Moves to Get a Peaceful Board (premium)\
+624. Maximum Distance in Arrays (duplicate)\
+---2024.08.17---\
+1937. Maximum Number of Points with Cost\
+---2024.08.18---\
+264. Ugly Number II\
+---2024.08.19---\
+650. 2 Keys Keyboard\
+---2024.08.20---\
+1140. Stone Game II (duplicate)\
+---2024.08.23---\
+592. Fraction Addition and Subtraction\
+320. Generalized Abbreviation (duplicate)\
+---2024.08.27---\
+1514. Path with Maximum Probability\
+---2024.08.28---\
+1905. Count Sub Islands\
+---2024.08.29---\
+947. Most Stones Removed with Same Row or Column\
+---2024.08.31---\
+666. Path Sum IV (premium)\
+1514. Path with Maximum Probability (duplicate)\
+---2024.09.02---\
+1894. Find the Student that Will Replace the Chalk\
+---2024.09.03---\
+1634. Add Two Polynomials Represented as Linked Lists (premium)\
+---2024.09.04---\
+874. Walking Robot Simulation\
+---2024.09.05---\
+2028. Find Missing Observations\
+---2024.09.06---\
+3217. Delete Nodes From Linked List Present in Array\
+---2024.09.07---\
+1367. Linked List in Binary Tree\
+---2024.09.08---\
+725. Split Linked List in Parts\
+---2024.09.09---\
+2326. Spiral Matrix IV\
+1229. Meeting Scheduler (premium)\
+---2024.09.10---\
+2807. Insert Greatest Common Divisors in Linked List\
+---2024.09.13---\
+1310. XOR Queries of a Subarray\
+---2024.09.14---\
+2419. Longest Subarray With Maximum Bitwise AND\
+---2024.09.15---\
+1371. Find the Longest Substring Containing Vowels in Even Counts\
+---2024.09.16---\
+539. Minimum Time Difference\
+1257. Smallest Common Region (premium)\
+---2024.09.17---\
+179. Largest Number\
+---2024.09.19---\
+241. Different Ways to Add Parentheses\
+---2024.09.21---\
+386. Lexicographical Numbers\
+---2024.09.23---\
+1858. Longest Word With All Prefixes (premium)\
+2707. Extra Characters in a String\
+---2024.09.24---\
+3043. Find the Length of the Longest Common Prefix\
+---2024.09.26---\
+729. My Calendar I\
+---2024.09.27---\
+731. My Calendar II\
+---2024.09.28---\
+641. Design Circular Deque\
+---2024.09.29---\
+1804. Implement Trie II (Prefix Tree) (premium)\
+---2024.09.30---\
+1381. Design a Stack With Increment Operation\
+---2024.10.01---\
+1497. Check If Array Pairs Are Divisible by k\
+---2024.10.03---\
+1590. Make Sum Divisible by P\
+---2024.10.04---\
+2491. Divide Players Into Teams of Equal Skill\
+---2024.10.05---\
+567. Permutation in String (duplicate)\
+---2024.10.06---\
+1813. Sentence Similarity III\
+---2024.10.08---\
+1963. Minimum Number of Swaps to Make the String Balanced\
+2838. Maximum Coins Heroes Can Collect (premium)\
+---2024.10.09---\
+921. Minimum Add to Make Parentheses Valid\
+---2024.10.10---\
+962. Maximum Width Ramp\
+---2024.10.11---\
+1942. The Number of the Smallest Unoccupied Chair\
+---2024.10.12---\
+2406. Divide Intervals Into Minimum Number of Groups\
+---2024.10.14---\
+2530. Maximal Score After Applying K Operations\
+---2024.10.15---\
+2938. Separate Black and White Balls\
+1429. First Unique Number (premium) (duplicate)\
+---2024.10.16---\
+1405. Longest Happy String\
+---2024.10.17---\
+670. Maximum Swap\
+---2024.10.19---\
+2044. Count Number of Maximum Bitwise-OR Subsets\
+1545. Find Kth Bit in Nth Binary String\
+---2024.10.21---\
+1593. Split a String Into the Max Number of Unique Substrings\
+---2024.10.22---\
+2583. Kth Largest Sum in a Binary Tree\
+2664. The Knight’s Tour (premium)\
+---2024.10.23---\
+2641. Cousins in Binary Tree II\
+---2024.10.24---\
+951. Flip Equivalent Binary Trees\
+---2024.10.25---\
+1233. Remove Sub-Folders from the Filesystem\
+---2024.10.26---\
+1277. Count Square Submatrices with All Ones\
+---2024.10.28---\
+2501. Longest Square Streak in an Array\
+---2024.10.29---\
+2684. Maximum Number of Moves in a Grid\
+---2024.11.01---\
+2955. Number of Same-End Substrings (premium)\
+---2024.11.04---\
+3163. String Compression III\
+---2024.11.05---\
+2914. Minimum Number of Changes to Make Binary String Beautiful\
+---2024.11.06---\
+3011. Find if Array Can Be Sorted\
+---2024.11.07---\
+2275. Largest Combination With Bitwise AND Greater Than Zero\
+---2024.11.08---\
+1829. Maximum XOR for Each Query\
+---2024.11.09---\
+3133. Minimum Array End\
+---2024.11.10---\
+3097. Shortest Subarray With OR at Least K II\
+---2024.11.11---\
+2601. Prime Subtraction Operation\
+---2024.11.12---\
+2070. Most Beautiful Item for Each Query\
+---2024.11.13---\
+2563. Count the Number of Fair Pairs\
+---2024.11.14---\
+2064. Minimized Maximum of Products Distributed to Any Store\
+---2024.11.15---\
+1574. Shortest Subarray to be Removed to Make Array Sorted\
+---2024.11.17---\
+3254. Find the Power of K-Size Subarrays I\
+---2024.11.18---\
+2107. Number of Unique Flavors After Sharing K Candies (premium)\
+---2024.11.19---\
+2461. Maximum Sum of Distinct Subarrays With Length K\
+---2024.11.20---\
+2516. Take K of Each Character From Left and Right\
+---2024.11.21---\
+2257. Count Unguarded Cells in the Grid\
+---2024.11.22---\
+1072. Flip Columns For Maximum Number of Equal Rows\
+---2024.11.23---\
+1861. Rotating the Box\
+---2024.11.24---\
+1975. Maximum Matrix Sum\
+---2024.11.26---\
+2924. Find Champion II\
+---2024.11.27---\
+3243. Shortest Distance After Road Addition Queries I\
+---2024.12.03---\
+2109. Adding Spaces to a String\
+---2024.12.04---\
+2825. Make String a Subsequence Using Cyclic Increments\
+---2024.12.05---\
+2337. Move Pieces to Obtain a String\
+---2024.12.06---\
+2554. Maximum Number of Integers to Choose From a Range I\
+---2024.12.07---\
+1760. Minimum Limit of Balls in a Bag\
+277. Find the Celebrity (premium) (duplicate)\
+---2024.12.08---\
+2054. Two Best Non-Overlapping Events\
+---2024.12.09---\
+3152. Special Array II\
+---2024.12.10---\
+1891. Cutting Ribbons (premium)\
+2981. Find Longest Special Substring That Occurs Thrice I\
+---2024.12.11---\
+2779. Maximum Beauty of an Array After Applying Operation\
+---2024.12.13---\
+2593. Find Score of an Array After Marking All Elements\
+---2024.12.14---\
+2762. Continuous Subarrays\
+---2024.12.15---\
+1792. Maximum Average Pass Ratio\
+---2024.12.17---\
+2182. Construct String With Repeat Limit (duplicate)\
+2832. Maximal Range That Each Element Is Maximum in It (premium)\
+---2024.12.19---\
+769. Max Chunks To Make Sorted\
+---2024.12.20---\
+2415. Reverse Odd Levels of Binary Tree\
+---2024.12.22---\
+1644. Lowest Common Ancestor of a Binary Tree II (premium)\
+---2024.12.23---\
+2471. Minimum Number of Operations to Sort a Binary Tree by Level\
+---2024.12.25---\
+515. Find Largest Value in Each Tree Row (pass)\
+---2024.12.26---\
+494. Target Sum (duplicate)\
+---2024.12.29---\
+1746. Maximum Subarray Sum After One Operation (premium)\
+---2024.12.30---\
+2466. Count Ways To Build Good Strings (duplicate)
 
 **[ Others ]**\
 ---2023.02.15---\
@@ -1022,7 +1458,9 @@ None. Design Uber\
 ---2024.06.24---\
 3191. Minimum Operations to Make Binary Array Elements Equal to One I (help 995.)
 ---2024.06.25---\
-538. Convert BST to Greater Tree (same 1038.)
+538. Convert BST to Greater Tree (same 1038.)\
+---2024.08.17---\
+1014. Best Sightseeing Pair (help 1937.)\
 
 
 

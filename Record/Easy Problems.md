@@ -616,7 +616,67 @@ None. Calculate Maximum Information Gain
 ---2024.07.06---\
 2582. Pass the Pillow\
 ---2024.07.07---\
-1518. Water Bottles
+1518. Water Bottles\
+---2024.07.10---\
+1598. Crawler Log Folder (duplicate)\
+---2024.07.19---\
+1380. Lucky Numbers in a Matrix (pass)\
+---2024.07.22---\
+2418. Sort the People\
+---2024.07.23---\
+1636. Sort Array by Increasing Frequency\
+---2024.08.01---\
+2678. Number of Senior Citizens\
+---2024.08.03---\
+1460. Make Two Arrays Equal by Reversing Subarrays (premium)\
+---2024.08.05---\
+2053. Kth Distinct String in an Array\
+---2024.08.12---\
+703. Kth Largest Element in a Stream (duplicate)\
+---2024.08.15---\
+860. Lemonade Change (duplicate)\
+---2024.08.22---\
+476. Number Complement\
+---2024.08.25---\
+145. Binary Tree Postorder Traversal (duplicate)\
+---2024.08.26---\
+590. N-ary Tree Postorder Traversal (duplicate)\
+---2024.09.01---\
+2022. Convert 1D Array Into 2D Array\
+---2024.09.03---\
+1945. Sum of Digits of String After Convert\
+---2024.09.11---\
+2220. Minimum Bit Flips to Convert Number\
+---2024.09.12---\
+1684. Count the Number of Consistent Strings\
+---2024.09.17---\
+884. Uncommon Words from Two Sentences_01 (duplicate)\
+---2024.10.01---\
+1133. Largest Unique Number (premium) (pass)\
+---2024.10.02---\
+1331. Rank Transform of an Array (pass)\
+---2024.10.07---\
+2696. Minimum String Length After Removing Substrings\
+---2024.11.01---\
+1957. Delete Characters to Make Fancy String\
+---2024.11.02---\
+2490. Circular Sentence\
+---2024.11.03---\
+796. Rotate String (duplicate)\
+---2024.11.08---\
+1213. Intersection of Three Sorted Arrays (premium)\
+---2024.11.19---\
+1652. Defuse the Bomb\
+---2024.12.01---\
+1346. Check If N and Its Double Exist (pass)\
+---2024.12.02---\
+1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence (pass)\
+---2024.12.12---\
+2558. Take Gifts From the Richest Pile\
+---2024.12.16---\
+3264. Final Array State After K Multiplication Operations I\
+---2024.12.18---\
+1475. Final Prices With a Special Discount in a Shop (duplicate)
 
 **[ Others ]**\
 ---2022.09.04---\
@@ -952,7 +1012,11 @@ None. Calculate Maximum Information Gain
 ---2024.06.10---\
 459. Repeated Substring Pattern\
 ---2024.07.06---\
-3178. Find the Child Who Has the Ball After K Seconds (same 2582.)
+3178. Find the Child Who Has the Ball After K Seconds (same 2582.)\
+---2024.09.09---\
+2570. Merge Two 2D Arrays by Summing Values (help 1229.)\
+---2024.09.27---\
+1507. Reformat Date
 
 
 

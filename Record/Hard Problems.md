@@ -212,10 +212,72 @@
 ---2024.06.24---\
 995. Minimum Number of K Consecutive Bit Flips\
 ---2024.06.30---\
-1579. Remove Max Number of Edges to Keep Graph Fully Traversable
+1579. Remove Max Number of Edges to Keep Graph Fully Traversable\
+---2024.07.13---\
+2751. Robot Collisions\
+---2024.07.15---\
+726. Number of Atoms\
+---2024.07.21---\
+2392. Build a Matrix With Conditions\
+---2024.07.28---\
+2045. Second Minimum Time to Reach Destination\
+---2024.08.07---\
+273. Integer to English Words\
+---2024.08.11---\
+1568. Minimum Number of Days to Disconnect Island\
+---2024.08.14---\
+719. Find K-th Smallest Pair Distance (duplicate)
+---2024.08.24---\
+664. Strange Printer [Time Travel Ticket for 08.21]\
+---2024.08.24---\
+564. Find the Closest Palindrome\
+---2024.08.30---\
+2699. Modify Graph Edge Weights\
+---2024.09.23---\
+440. K-th Smallest in Lexicographical Order\
+---2024.09.24---\
+214. Shortest Palindrome [Time Travel Ticket for 09.20]\
+---2024.09.25---\
+2416. Sum of Prefix Scores of Strings\
+---2024.09.29---\
+432. All O`one Data Structure\
+---2024.10.13---\
+632. Smallest Range Covering Elements from K Lists (duplicate)\
+---2024.10.20---\
+1106. Parsing A Boolean Expression\
+---2024.10.29---\
+265. Paint House II_01 (premium) (duplicate)\
+---2024.10.30---\
+1671. Minimum Number of Removals to Make Mountain Array\
+---2024.10.31---\
+2463. Minimum Total Distance Traveled\
+---2024.11.17---\
+862. Shortest Subarray with Sum at Least K\
+---2024.11.22---\
+2371. Minimize Maximum Value in a Grid (premium)\
+---2024.11.26---\
+773. Sliding Puzzle\
+---2024.11.28---\
+2290. Minimum Obstacle Removal to Reach Corner\
+---2024.11.29---\
+2577. Minimum Time to Visit a Cell In a Grid\
+---2024.11.30---\
+2097. Valid Arrangement of Pairs\
+2204. Distance to a Cycle in Undirected Graph (premium)\
+---2024.12.21---\
+2872. Maximum Number of K-Divisible Components
+---2024.12.22---\
+2940. Find Building Where Alice and Bob Can Meet\
+---2024.12.24---\
+3203. Find Minimum Diameter After Merging Two Trees\
+---2024.12.28---\
+689. Maximum Sum of 3 Non-Overlapping Subarrays\
+---2024.12.29---\
+1639. Number of Ways to Form a Target String Given a Dictionary
 
-**[ Others ]**
-
+**[ Others ]**\
+---2024.10.16---\
+23. Merge k Sorted Lists
 
 
 

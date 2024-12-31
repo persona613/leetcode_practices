@@ -1,30 +1,20 @@
 """
-1929 ms runtime beats 69.63%
-22.7 MB memory beats 40.65%
-"""
+580 ms runtime beats 87.85%
+29.52 MB memory beats 17.14%
+"""   
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
+        # counting sort
+        mi = min(nums)
+        mx = max(nums)
+        freq = dict()
+        for v in nums:
+            freq[v] = freq.get(v, 0) + 1
         
-        def merge(left, right):
-            li = ri = 0
-            ret = []
-            while li < len(left) and ri < len(right):
-                if left[li] < right[ri]:
-                    ret.append(left[li])
-                    li += 1
-                else:
-                    ret.append(right[ri])
-                    ri += 1
-            ret.extend(left[li:])
-            ret.extend(right[ri:])
-            return ret
-                
-        if len(nums) < 2:
-            return nums
-        
-        pivot = int(len(nums)/2)
-        left = self.sortArray(nums[0:pivot])
-        right = self.sortArray(nums[pivot:])
-        return merge(left, right)
-    
-        
+        idx = 0
+        for v in range(mi, mx + 1):
+            while freq.get(v, 0) > 0:
+                nums[idx] = v
+                freq[v] -= 1
+                idx += 1
+        return nums     

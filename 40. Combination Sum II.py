@@ -1,26 +1,26 @@
 """
-60 ms runtime beats 64.84%
-16.76 MB memory beats 11.25%
+41 ms runtime beats 94.09%
+16.65 MB memory beats 30.23%
 """
 class Solution:
     def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
-        
-        def backtrack(start, sm, comb):
-            if sm == target:
-                res.append(list(comb))
-                return
 
-            last_remove = 0
-            for j in range(start, n):
-                if last_remove == candidates[j]:
+        def backtrack(start, target, path):
+            if target == 0:
+                res.append(path[:])
+            
+            for i in range(start, n):
+                if i > start and candidates[i] == candidates[i - 1]:
                     continue
-                if sm + candidates[j] <= target:
-                    comb.append(candidates[j])
-                    backtrack(j + 1, sm + candidates[j], comb)
-                    last_remove = comb.pop()
+                
+                if candidates[i] > target:
+                    break
+                path.append(candidates[i])
+                backtrack(i + 1, target - candidates[i], path)
+                path.pop()
 
         candidates.sort()
         n = len(candidates)
         res = []
-        backtrack(0, 0, [])
+        backtrack(0, target, [])
         return res
